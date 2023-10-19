@@ -412,7 +412,7 @@ i.volume-off, i.volume-on{
   display: flex;
   flex-direction: column;
   height: inherit;
-  background-image: url(./images/game-background\ 1500px.png);
+  background-image: url(./images/halloween-images/scary-game-background.jpg);
   /* advice from W3Schools on using background size 100% 100% to keep background img stable  */
   background-size: 100% 100%;
   align-items: center;
