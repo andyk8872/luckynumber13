@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Mouse Memoirs';
+    src: url('MouseMemoirs-Regular.woff2') format('woff2'),
+        url('MouseMemoirs-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
