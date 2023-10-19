@@ -1,0 +1,1152 @@
+
+/* code for responsive typography adapted from Kevin Powell */
+/* root directory */
+/* custom properties */
+/* anything below 800 px width */
+:root {
+--fs-xxl: 4.1rem;
+--fs-xl: 2.5rem;
+--fs-800: 3rem;
+--fs-600: 1.5rem;
+/* 1 time the root font size */
+/* most browsers have a default root font size of 16px */
+--fs-400: 1rem;
+}
+
+/* 40 times the current font size */
+/* 50em = 800px */
+/* Anything above 800px in width size */
+@media (min-width: 50em){
+  :root{
+    --fs-xxl: 7.8rem;
+    --fs-xl: 5rem;
+    --fs-600: 2rem;
+    --fs-400: 1.125rem;
+  }
+}
+
+/* Ipad */
+@media (min-width: 768px) and (min-height: 1024px){
+  :root{
+    --fs-600: 3rem;
+    --fs-xxl: 7rem;
+  }
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  /* padding not included in size  */
+  box-sizing: border-box;
+}
+
+
+body {
+  /* body will take 100% of available viewport space */
+  height: 100vh;
+  font-family: "Mouse Memoirs", sans-serif;
+  /* my equivalent of 1rem for normal text */
+  font-size: var(--fs-400);
+}
+
+/* styling for landing page */
+
+/* container for title */
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  bottom: 70vh;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  width: inherit;
+}
+
+.heroTitle {
+  /* centers the top of the text to the middle */
+  position: relative;
+  text-align: center;
+  top: 5vh;
+  letter-spacing: .5vw;
+  color: #FFEC3D;
+  font-size: var(--fs-xl);
+  padding: 1vw;
+  text-shadow: 2px 2px 10px black, 7px 7px 4px #a34c06;
+}
+
+/* styling for hero image title */
+.hero-image {
+  background-image: url(./images/heroImg.webp);
+  justify-content: center;
+  height: 100vh;
+  display: flex;
+  background-size: 100% 100%;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  top: 80%;
+  position: absolute;
+  height: 7vh;
+  width: 100%;
+}
+
+/* styling of play & how to play buttons code adapted from GreatStack */
+
+.howToPlay1,
+.play-button, .mute-button {
+  display: inline-block;
+  font-size: var(--fs-600);
+  padding: 2vw;
+  font-weight: bold;
+  font-family: "Mouse Memoirs", sans-serif;
+  background: #FFEC3D;
+  color: black;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 2px 25px;
+  /* put bubbles behind button */
+  z-index: 2;
+  min-width: fit-content;
+}
+
+/* volume button styling */
+
+i.volume-off, i.volume-on{
+  width: 5vw;
+  position: relative;
+  /* display block takes up the entire width of what's containing it
+  it will force new lines above and below it */
+  display: block;
+}
+
+
+.howToPlay1:hover,
+.play-button:hover, .mute-button:hover {
+  background-color: #FFEC3D; /* change to your desired color */
+  color: #FF3C14; /* change to your desired color */
+  box-shadow: 0 20px 100px;
+}
+
+/* creates 'bubbles' */
+/* bubbles converted into stars using code adapted from [coding Artist](https: //www.youtube.com/watch?v=LZx_Hyudmdw) */
+.howToPlay1 span,
+.play-button span {
+  width: 0;
+  height: 0;
+  border-bottom: 20px solid yellow;
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  z-index: -1;
+  position: absolute;
+  display: block;
+  /* so the bubbles will be invisible */
+  transform: scale(0);
+}
+
+.howToPlay1 span::before,
+.play-button span::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 20px solid yellow;
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  top: 7px;
+  left: -13px;
+  z-index: -1;
+}
+
+.play-button span:nth-child(1),
+.howToPlay1 span:nth-child(1) {
+  top: -1000%;
+  left: -1300%;
+}
+
+.play-button span:nth-child(2),
+.howToPlay1 span:nth-child(2) {
+  top: -1300%;
+  left: 500%;
+}
+
+.play-button span:nth-child(3),
+.howToPlay1 span:nth-child(3) {
+  top: -50%;
+  left: -1000%;
+  background: transparent;
+}
+
+.play-button span:nth-child(4),
+.howToPlay1 span:nth-child(4) {
+  top: -1500%;
+  left: -400%;
+}
+
+.play-button span:nth-child(5),
+.howToPlay1 span:nth-child(5) {
+  top: -90%;
+  left: 28%;
+}
+
+.play-button span:nth-child(6),
+.howToPlay1 span:nth-child(6) {
+  top: -70%;
+  left: -1000%;
+}
+
+.play-button span:nth-child(7),
+.howToPlay1 span:nth-child(7) {
+  top: -1200%;
+  left: -1100%;
+  background: transparent;
+}
+
+.play-button span:nth-child(8),
+.howToPlay1 span:nth-child(8) {
+  top: -2500%;
+  left: -1200%;
+}
+
+.play-button span:nth-child(9),
+.howToPlay1 span:nth-child(9) {
+  top: -1000%;
+  left: -600%;
+}
+
+.play-button span:nth-child(10),
+.howToPlay1 span:nth-child(10) {
+  top: -70%;
+  left: 400%;
+}
+
+.play-button span:nth-child(11),
+.howToPlay1 span:nth-child(11) {
+  top: -600%;
+  left: 600%;
+  background: transparent;
+}
+
+.play-button span:nth-child(12),
+.howToPlay1 span:nth-child(12) {
+  top: -50%;
+  left: 110%;
+}
+
+.play-button span:nth-child(13),
+.howToPlay1 span:nth-child(13) {
+  top: 40%;
+  left: -200%;
+}
+
+.play-button span:nth-child(14),
+.howToPlay1 span:nth-child(14) {
+  top: 60%;
+  left: 120%;
+}
+
+.play-button span:nth-child(15),
+.howToPlay1 span:nth-child(15) {
+  top: -2200%;
+  left: -10%;
+}
+
+.play-button span:nth-child(16),
+.howToPlay1 span:nth-child(16) {
+  top: -2200%;
+  left: 300%;
+  background: transparent;
+}
+
+.play-button span:nth-child(17),
+.howToPlay1 span:nth-child(17) {
+  top: -1000%;
+  left: 10%;
+}
+
+.play-button span:nth-child(18),
+.howToPlay1 span:nth-child(18) {
+  top: -300%;
+  left: -1000%;
+}
+
+.play-button span:nth-child(19),
+.howToPlay1 span:nth-child(19) {
+  top: -4500%;
+  left: 33%;
+  background: transparent;
+}
+
+.play-button span:nth-child(20),
+.howToPlay1 span:nth-child(20) {
+  top: -1000%;
+  left: 1000%;
+}
+
+.play-button span:nth-child(21),
+.howToPlay1 span:nth-child(21) {
+  top: -2500%;
+  left: 1000%;
+}
+
+.play-button span:nth-child(22),
+.howToPlay1 span:nth-child(22) {
+  top: -2000%;
+  left: 1000%;
+  background-color: transparent;
+}
+
+.play-button span:nth-child(23),
+.howToPlay1 span:nth-child(23) {
+  top: -2000%;
+  left: -1500%;
+}
+
+.play-button span:nth-child(24),
+.howToPlay1 span:nth-child(24) {
+  top: -3500%;
+  left: -1000%;
+}
+
+/* forwards means it will stop the animation after one time running */
+.anim {
+  animation: moving 1s linear reverse forwards;
+}
+
+/* forwards means it will stop the animation after one time running */
+.anim {
+  animation: moving 2s linear reverse forwards;
+}
+
+@keyframes moving {
+  50% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+
+  100% {
+    top: 100%;
+    left: 50%;
+  }
+}
+
+.play-button {
+  text-decoration: none;
+}
+
+/* styling for when the buttons are clicked */
+
+.howToPlay1:active,
+.play-button:active {
+  background: #d80972;
+  box-shadow: 0 2px 25px;
+}
+
+/* styling for game */
+/* Code adapted from [Marina-Ferria](https: //www.youtube.com/watch?v=ZniVgo8U7ek) */
+
+.card-container {
+  /* set width for container */
+  width: 70vw;
+  height: 70vh;
+  display: flex;
+  /* introduce rows  */
+  flex-wrap: wrap;
+  /* For 3D effect when card flipped.Perspective property gives depth to elements
+     */
+  perspective: 1000px;
+  padding-top: 1%;
+  contain:content;
+}
+
+/* styling for Reset button, timer and counter */
+/* Code adapted from [Iris Smok](https: //github.com/Iris-Smok/Kids-Memory-Game_PP2/blob/main/index.html) */
+/* styling to shape the info div like a flag adapted from Zoe Rooney: css-tricks.com */
+
+.info-container {
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 72vw;
+  height: 0;
+  border-left: 10vh solid transparent;
+  border-bottom: 7vh solid rgb(68, 33, 224, 0.8);
+  border-top: 7vh solid rgb(68, 33, 224, 0.8);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.info-container::after {
+  width: 50%;
+  position: absolute;
+}
+
+/* to keep timer & counter on same line & responsive to screen size */
+
+.timer-counter-container {
+  display: flex;
+  color: yellow;
+  text-shadow: 2px 2px 2px black;
+  align-items: flex-end;
+  visibility: hidden;
+  font-size: var(--fs-600);
+}
+
+/* game & info stay in same screen */
+
+.info-game-container {
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+  background-image: url(./images/game-background\ 1500px.png);
+  /* advice from W3Schools on using background size 100% 100% to keep background img stable  */
+  background-size: 100% 100%;
+  align-items: center;
+  padding-top: 2%;
+}
+
+.info-game-container-hideCards > :not(.opencongratsModal-popup) {
+  /* visibility: hidden; */
+}
+
+.timer {
+  margin-right: 2vw;
+  margin-left: 1vw;
+}
+
+.counter {
+  position: relative;
+  display: inline-block;
+  padding-left: 0;
+}
+
+span.counter {
+  padding-left: 1px;
+  padding-right: 1rem;
+}
+
+#reset-container {
+  width: 100%;
+}
+
+i.repeat{
+  height: 7vh;
+  display: flex;
+  cursor: pointer;
+}
+
+.memory-card {
+  /* 4 cards @ 25% each for row, 3 cards @ 33% each for columns */
+  /* The css calc function allows one to remove 
+    the width of the margin from the width & height so that the cards fit into the container again 
+    and the 3*4 structure is maintained */
+  width: calc(25% - 10px);
+  height: calc(33% - 10px);
+  /* gives the cards a position which the front and back cards can position themselves from */
+  position: relative;
+  margin: 5px;
+  /* so the active card knows to start from 1 when transitioning */
+  transform: scale(1);
+
+  /* \Inserts memory card element inside 3D space created in card container*/
+  transform-style: preserve-3d;
+  /* evokes the action of the transform property */
+  transition: transform.5s;
+}
+
+/* The card will decrease by .3 when active over .2s */
+.memory-card:active {
+  /* transform: scale(.97); */
+  transition: transform 0.2s;
+}
+
+/* styling flip card both classes belong to the same element, so no spaces between names */
+/* when the clip class is present rotate Y 180 degrees */
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  /* images take whole width & height of container */
+  width: 100%;
+  height: 100%;
+  /* places the front and back cards on top of one another */
+  position: absolute;
+  padding: 2%;
+  border-radius: 5px;
+  background-color: white;  
+  /* so image is sharp */
+  object-fit: contain;
+  cursor: pointer;
+  border-color: black;
+  border: outset;
+}
+
+.backFaceVisibility{
+   /*Every HTML element has a mirrored image of itself. The property backface-visibility 
+     defaults to visible so one needs to put this to hidden before the front of the cards 
+     can be shown when flipped*/
+  backface-visibility: hidden;
+}
+
+.card-front {
+  /* front card rotated 180 degrees so it can be seen when filpcard is activated */
+  transform: rotateY(180deg);
+}
+
+.card-back{
+  background-color: #FFEC3D;
+}
+
+.card-front.front1 {
+  transform: inherit;
+}
+
+/* styling for modal. Code adapted from WebDevSimplified */
+
+.modal {
+  position: fixed;
+  /* centers the top of the text to the middle */
+  top: 50%;
+  left: 50%;
+  /* change the position of the elements 
+        50% here is 50% of the size of the container 
+        not the entire screen like above
+        Setting the scale to zero means it's invisible*/
+  transform: translate(-50%, -50%) scale(0);
+  /* scale allows for a smooth transition, as opposed to display: none */
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  /* want modal to draw above everything else */
+  z-index: 10;
+  background-color: white;
+  width: 80vw;
+  height: 80vh;
+  contain: content;
+
+  /* Add scroll behaviour to modal for smaller screensizes adapted from stackoverflow */
+  max-height: 80vh;
+  max-width: 80vw;
+  overflow-y: auto;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  background-color: yellow;
+}
+
+.modal-header .title {
+/* use of vw instead of rem, as it makes size responsive */
+  font-size: var(--fs-xl);
+  font-weight: bold;
+  /* extra padding on left to account for x */
+  padding: 0 24vw 0 27vw;
+}
+
+.howWin, .hardMode {
+  display: flex;
+  padding: 1.5vh;
+  justify-content: center;
+  font-size: var(--fs-xl);
+  font-weight: bold;
+  padding-top: 4vh;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: var(--fs-400);
+  font-weight: bold;
+  color: black;
+  box-shadow: none;
+  padding-right: 2vw;
+}
+
+.modal-body {
+  line-height: 1.5;
+  text-transform: capitalize;
+  font-size: var(--fs-600);
+  padding:0 8vw 0 8vw;
+  color: yellow;
+  text-shadow: 3px 3px 3px black;
+  background-color: midnightblue;
+}
+
+#modal-overlay {
+  position: fixed;
+  /* so by default the modal doesn't display */
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  /* stretches overlay all over the screen */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 235, 60, 0.5);
+  /* so the open modal button works when the overlay is not active */
+  pointer-events: none;
+}
+
+/* so one can toggle between overlay being present of not */
+#modal-overlay.active {
+  pointer-events: all;
+  opacity: 1;
+}
+
+/* overlay for congrats popup */
+
+#modal-overlay.active1 {
+  pointer-events: all;
+  opacity: 1;
+  background-color: rgba(255, 235, 60, 0.9);
+  z-index: 1;
+}
+
+.congratsModal-overlay {
+  position: fixed;
+  /* so by default the modal doesn't display */
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  /* stretches overlay all over the screen */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* so the open modal button works when the overlay is not active */
+  pointer-events: none;
+}
+
+/* so one can toggle between overlay being present of not */
+.congratsModal-overlay.active {
+  pointer-events: all;
+  opacity: 1;
+}
+
+.congratsModal-container {
+  position: relative;
+  display: flex;
+}
+
+.congratsModal-popup {
+  width: 40vw;
+  background: white;
+  border-radius: 6px;
+  position: absolute;
+  /* to add zoom out effect */
+  transform: translate(-50%, -50%) scale(0.1);
+  padding: 0 30px 30px;
+  color: #333;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 40vh;
+}
+
+.opencongratsModal-popup {
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.congratsModal-popup img {
+  width: 30vw;
+  height: 30vh;
+}
+
+.congratsModal-popup button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px 0;
+  background: black;
+  color: white;
+  outline: none;
+  font-size: var(--fs-400);
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-family: "Mouse Memoirs", sans-serif;
+}
+
+.congratsStars svg{
+  height: var(--fs-xxl)
+}
+
+.congratsCounter {
+  padding-top: 4vh;
+}
+
+.congratsCounter, .congratsTimer, .congratsStars {
+  font-size: var(--fs-600);
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* stars code adapted from Susan Chen */
+.info-container .stars {
+  margin: 0 1.25rem 0 0;
+  height: 10vh;
+  display: flex;
+  text-shadow: 2px 2px 2px black;
+}
+
+.stars svg{
+  width: 5vw;
+}
+
+.info-container .stars li {
+  /* remove bullet points */
+  list-style: none;
+  /* put the stars in even row */
+  display: flex;
+}
+
+/* hollowed out stars  */
+
+i.star {
+  margin-right: 2vw;
+  mix-blend-mode: overlay;
+  height: 2vh;
+  position: relative;
+}
+
+.star:before {
+  color: yellow;
+  float: right;
+  left: 2px;
+  position: relative;
+}
+
+span.starCounter {
+  visibility: hidden;
+}
+
+h3 {
+  color: yellow;
+  text-shadow: 2px 2px 2px black;
+  font-size: var(--fs-800);
+  position: absolute;
+}
+
+.after{
+  display:none;
+}
+
+/* styling for 404 error page */
+
+.ErrorBody{
+  background-image: url(https://images.unsplash.com/photo-1616235132417-99f443954d2e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80);
+  background-size: cover;
+  display: flex;
+  font-family: "Mouse Memoirs", sans-serif;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.Errormain{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header404{
+  font-family: "Mouse Memoirs", sans-serif;
+  font-size: var(--fs-xxl);
+  text-align: center;
+}
+
+.ErrorBody a {
+  display: flex;
+  justify-content: center;
+}
+
+/* card shake style */
+
+/* Each keyframe is activated within .35s interval */
+@keyframes horizontal-shaking {
+  0% { transform: translateX(0) }
+  25% { transform: translateX(1vh) }
+  50% { transform: translateX(-1vh) }
+  75% { transform: translateX(1vh) }
+  100% { transform: translateX(0) }
+}
+
+.card-front.horizontal-shake {
+  animation: horizontal-shaking .35s 0s 5;
+}
+
+/* Shaking for click any card to begin */
+
+@keyframes jump-shaking {
+  0% { transform: translateX(0) }
+  25% { transform: translateY(0vh) }
+  35% { transform: translateY(0vh) rotate(7deg) }
+  55% { transform: translateY(0vh) rotate(-7deg) }
+  65% { transform: translateY(0vh) rotate(7deg) }
+  75% { transform: translateY(0vh) rotate(-7deg) }
+  100% { transform: translateY(0) rotate(0) }
+}
+
+h3.cardShake {
+  animation: jump-shaking 0.83s infinite;
+}
+
+/* To hide cards in background when they match & shake */
+
+.visibilityHidden {
+    visibility: hidden; 
+}
+/* to push viewer to bottom of game page when play button pressed */
+#anchor1{
+  bottom: 77px;
+  visibility: hidden;
+  background-color:transparent;
+}
+
+/*----------------FOOTER---*/
+/* code adapted from Iris Smok */
+
+footer{
+  position: relative;
+  width: 100vw;
+  background-color: #FFEC3D;
+  min-height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer .social-links{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .social-links li {
+  width: 4vw;
+  height: 2vh;
+  display: block; 
+  margin-bottom: 7vh;
+  margin-right: 4vh;
+  list-style: none;
+}
+
+footer .social-links li a {
+    width: 100%;
+    color: black;
+    display:inline-block;
+    transition: 0.5s;  
+}
+
+footer .social-links li a:hover{
+  transform: translateY(-2vh);
+}
+
+footer .email-frame{
+  display:flex;
+  font-size: var(--fs-600);
+}
+
+#svgEnvelope{
+  width: 120%;
+  height: 120%;
+}
+
+.envelopeSVGContainer{
+ width: 4vw;
+ height: 4vh;
+ resize: both;
+}
+
+/* @Media queries */
+
+@media only screen and (min-width: 640px) and (max-height:360px) and (orientation: landscape) {
+  .heroTitle{
+    /* Galaxy S5*/
+    top:1vh !important;
+  }
+  #btn{
+    left: 10vw;
+  }
+}
+
+/* iphone7 portrait */
+
+@media only screen and (width: 375px) and (height:548px) {
+.title-container{
+  /* to account diff between dev tools & actual iphone 7 */
+  bottom: 60vh;
+}
+}
+
+/* iphone7 landscape */
+
+@media only screen and (width: 548px) and (height: 375px) and (orientation: landscape) {
+  .heroTitle {
+    top: 10vh !important;
+  }
+  #btn{
+    width: 45% !important;
+  }
+
+}
+
+@media only screen and (min-width: 658px) and (max-height:320px) {
+  .title-container{
+    /* for Galaxy S9+ */
+    bottom: 80vh;
+  }
+  .heroTitle{
+    top: 4vh !important;
+  }
+  }
+    /* iphone X */
+  @media only screen and (width: 812px) and (height:375px) {
+   
+    .heroTitle{
+      top: -2vh !important;
+    }
+    }
+
+    @media only screen and (width: 375px) and (height:812px) {
+   
+      .heroTitle{
+        top: 4vh !important;
+      }
+      }
+
+@media only screen and (min-width: 350px) and (max-width: 500px) {
+
+  .opencongratsModal-popup {
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1.1);
+    position: relative;
+    bottom: -70%;
+  }
+
+  .modal {
+    width: 95vw;
+  }
+
+  .howToPlay1,
+  .play-button {
+    padding: 5vw;
+  }
+  .timer {
+    float: right;
+    margin-right: 2vw;
+    margin-left: 2vw;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 600px) {
+}
+.title-container {
+  top: -3vh;
+}
+
+@media (min-width: 667px) {
+  .turnDeviceWrapper {
+    display: none;
+  }
+  
+}
+
+
+
+/* Shows pop up when portrait */
+
+@media screen and (min-width: 240px) and (max-width: 350px) {
+  .heroTitle {
+    top: 5vh;
+    text-align: center;
+    padding-right: 11vw;
+  }
+}
+
+/* code to prompt user to flip device on smaller devices adapted from Jarrod Whitley */
+
+/* Hides pop up when landscape */
+@media only screen and (min-width: 280px) and (max-width: 750px) and (orientation: landscape) {
+
+  .pop-up {
+    display: none;
+  }
+  
+}
+
+@media only screen and (min-width: 250px) and (max-width: 750px) and (orientation: portrait) {
+  .pop-up {
+    position: absolute;
+    align-content: center;
+    top: 50vh;
+    z-index: 2;
+    text-align: center;
+    font-size: var(--fs-xl);
+  }
+  .info-game-container {
+    background-image: none;
+    background-color: rgba(255 , 235, 61, 0.7);
+  }
+  .card-container {
+    display: none;
+  }
+  .info-container {
+    visibility: hidden;
+  }
+  .form-box{
+    display:none;
+  }
+
+  footer{
+    display: none;
+  }
+ 
+  #reset {
+    display: none;
+  }
+  .turnDeviceWrapper {
+    display: flex;
+    position: relative;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 350px) {
+
+  .title-container{
+    padding-left:15vw;
+  }
+  .modal-header .title {
+    padding: 0 10vw 0 17vw;
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width: 800px) and (min-height: 800px) and (max-height: 1030px) {
+  .heroTitle {
+
+    top: 4vh;
+    text-align: center;
+  }
+
+  footer div{
+    font-size: 5vw;
+  
+  }
+
+}
+
+@media screen and (max-width: 659px) {
+
+  .info-container {
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 75%;
+    height: 0;
+    gap: 2vh;
+  
+  }
+  .info-container::after {
+    width: 71%;
+    position: absolute;
+  }
+ 
+
+  }
+
+@media (max-width: 1200px) {
+
+  .congratsModal-popup{
+    width: 60vw;
+  }
+ 
+  .hero-image {
+    background-position: center;
+  }
+}
+
+@media (max-width: 1500px) {
+  .heroTitle {
+    text-align: center;
+  }
+  .hero-image {
+    background-size: cover !important;
+    background-position: center;
+  }
+
+}
+
+.hidden {
+  display: none;
+}
+
+/* Toggle button styling */
+
+.button-box {
+  width: 100%;
+  position: relative;
+  border-radius: 30px;
+  background: rgb(255, 236, 61, 0.7);
+  display: flex;
+  border: solid;
+}
+
+.toggle-btn{
+  padding: 0.5vh 2.5vw;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+  text-align: center;
+  font-size: var(--fs-600);
+  color: black;
+  font-weight:bolder;
+  font-family: "Mouse Memoirs", sans-serif;
+}
+
+
+#btn{
+  left:0;
+  top:0;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: rgb(68 33 224);
+  border-radius: 26px;
+  transition: .5s;
+}
