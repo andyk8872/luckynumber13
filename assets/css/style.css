@@ -1,39 +1,95 @@
 body {
-  background-color: #333;
+  font-family: 'Nosifer', cursive;
+  background: #000;
+  color: white;
+  text-align: center;
+}
+
+header {
+  margin: 20px 0;
 }
 
 h1 {
-  text-align: center;
-  color: coral;
+  font-size: 40px;
 }
 
 .eyes {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .eye {
-  width: 240px;
-  height: 120px;
-  background: #fff;
-  display: inline-block;
-  margin: 40px;
-  border-radius: 50%;
+  width: 150px;
+  height: 150px;
   position: relative;
-  overflow: hidden;
+  border-radius: 50%;
+  background-color: #212121;
+  margin: 20px;
 }
 
 .ball {
   width: 50px;
   height: 50px;
-  background: #000;
   position: absolute;
+  border-radius: 50%;
+  background-color: white;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 50%;
-  border: 10px solid #333;
+}
+
+h2 {
+ size: 24px;
+  margin-bottom: 20px;
+}
+
+.enterButtonWrapper {
+  margin-bottom: 10px;
+}
+
+.enterButton {
+  font-size: 24px;
+  background-color: #FF5722;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.enterButton:hover {
+  background-color: #BF360C;
+}
+
+.meme {
+  font-size: 24px;
+  background-color: #FF5722;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.meme:hover {
+  background-color: #BF360C;
+}
+
+.tricks {
+  font-size: 24px;
+  background-color: #FF5722;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tricks:hover {
+  background-color: #BF360C;
 }
