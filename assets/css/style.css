@@ -1,0 +1,13 @@
+
+.enterButton{
+    padding: 2vw;
+    font-weight: bold;
+    background: #FFEC3D;
+    color: black;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 2px 25px;
+}
+
