@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sinister Meme Gallery</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #1f1f1f;
+      color: #fff;
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: auto;
+      max-height: 300px;
+    }
+
+    .carousel-caption {
+      background-color: rgba(46, 46, 46, 0.8);
+      color: #fff;
+      padding: 20px;
+    }
+
+    .carousel-caption h5 {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .carousel-caption p {
+      font-size: 16px;
+      margin-bottom: 0;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-family: 'Courier New', Courier, monospace;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 36px;
+      color: #ff5733;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="mt-4 mb-4">Sinister Meme Gallery</h1>
+    <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <!-- Add more indicators for additional memes -->
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="assets/images/meme1.png" alt="Meme 1">
+              <div class="carousel-caption">
+                <h5>Meme 1</h5>
+                <p>Description of Meme 1</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <img src="path_to_meme2.jpg" alt="Meme 2">
+              <div class="carousel-caption">
+                <h5>Meme 2</h5>
+                <p>Description of Meme 2</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <img src="path_to_meme3.jpg" alt="Meme 3">
+              <div class="carousel-caption">
+                <h5>Meme 3</h5>
+                <p>Description of Meme 3</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add more carousel items for additional sets of 3 memes -->
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="path_to_meme4.jpg" alt="Meme 4">
+              <div class="carousel-caption">
+                <h5>Meme 4</h5>
+                <p>Description of Meme 4</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <img src="path_to_meme5.jpg" alt="Meme 5">
+              <div class="carousel-caption">
+                <h5>Meme 5</h5>
+                <p>Description of Meme 5</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <img src="path_to_meme6.jpg" alt="Meme 6">
+              <div class="carousel-caption">
+                <h5>Meme 6</h5>
+                <p>Description of Meme 6</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span
