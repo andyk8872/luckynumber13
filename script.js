@@ -26,6 +26,54 @@ document.onmousemove = function () {
         balls[i].style.transform = "translate(-" + x + ", -" + y + ")";
     }
 }
+/* gallery function test */
+const galleryItems = [
+  "assets/images/meme1.png",
+  "assets/images/meme2.jpg",
+  "assets/images/meme3.jpg",
+  "assets/images/meme1.png",
+  "assets/images/meme2.jpg",
+  "assets/images/meme3.jpg",
+  "assets/images/meme1.png",
+  "assets/images/meme2.jpg",
+  "assets/images/meme3.jpg",
+  "assets/images/meme1.png",
+  "assets/images/meme2.jpg",
+  "assets/images/meme3.jpg",
+  "assets/images/meme3.jpg",
+];
+
+const galleryContainer = document.querySelector('.gallery');
+
+galleryItems.forEach((src) => {
+  const item = document.createElement('div');
+  item.classList.add('gallery-item');
+
+  const image = document.createElement('img');
+  image.src = src;
+
+  item.appendChild(image);
+  galleryContainer.appendChild(item);
+
+  image.addEventListener('click', () => {
+    showBiggerImage(src);
+  });
+});
+
+function showBiggerImage(src) {
+  const biggerImageContainer = document.createElement('div');
+  biggerImageContainer.classList.add('bigger-image');
+
+  const image = document.createElement('img');
+  image.src = src;
+
+  biggerImageContainer.appendChild(image);
+  document.body.appendChild(biggerImageContainer);
+
+  biggerImageContainer.addEventListener('click', () => {
+    document.body.removeChild(biggerImageContainer);
+  });
+}
 
 /* functions for meme page gallery */
 let modalId = $('#image-gallery');
@@ -120,3 +168,4 @@ $(document)
     }
     e.preventDefault(); // prevent the default action (scroll / move caret)
   });
+
