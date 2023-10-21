@@ -6,12 +6,20 @@ body {
   text-align: center;
 }
 
+.flex-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 header {
   margin: 20px 0;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 4rem;
+  font-family: 'Nosifer', cursive;
 }
 
 .eyes {
@@ -95,17 +103,17 @@ h2 {
   background-color: #BF360C;
 }
 
-
-.enterButton{
-    padding: 2vw;
-    font-weight: bold;
-    background: #FFEC3D;
-    color: black;
-    border-radius: 20px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    box-shadow: 0 2px 25px;
+.nav-item a {
+  font-size: 1.2rem;
+  font-family: 'Nosifer', cursive;
+  color: #FF5722 !important;
 }
+
+.active>.nav-link {
+  font-size: 1.2rem;
+  font-family: 'Nosifer', cursive;
+  color: #BF360C !important;
+}
+
 
 
