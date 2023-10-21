@@ -5,15 +5,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Testimonials Section</title>
 </head>
 
 <body>
-    <div class="container mt-5">
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="eyes">
+                <div class="eye">
+                    <div class="ball"></div>
+                </div>
+                <div class="eye">
+                    <div class="ball"></div>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tricks.html">Tricks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="memes.html">Treats</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="testimonial.html">Horror Stories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact.html">Helppp</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+    <div class="container-fluid mt-5">
         <h1 class="text-center mb-5">Scary Coding Stories</h1>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 px-5">
                 <h2>Add a Testimonial</h2>
                 <form id="reviewForm">
                     <div class="mb-3">
@@ -24,18 +68,47 @@
                         <label for="review">Scary Coding Story:</label>
                         <textarea class="form-control" id="review" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit Review</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 px-5">
                 <h2>Recent Testimonials:</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="card border border-4 border-warning">
+                            <img src="/assets/images/1.jpg" class="card-img-top" alt="User Image">
+                            <div class="card-body">
+                                <h5 class="card-title">A VERY SCARED CODER..</h5>
+                                <p class="card-text">THERE WAS A SPIDER ON MY KEYBOARD WEAVING HIS WEB - NEED I SAY ANY
+                                    MORE..</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="card border border-4 border-warning">
+                            <img src="/assets/images/3.jpg" class="card-img-top" alt="User Image">
+                            <div class="card-body">
+                                <h5 class="card-title">I NEED A NEW CAREER..</h5>
+                                <p class="card-text">THERE'S NOTHING SCARIER THAN A PRODUCT OWNER WHO DOESN'T KNOW A
+                                    LIST FROM AN ARRAY..</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div id="reviewList" class="row">
+
                     <!-- Reviews will be displayed here -->
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
     <script src="assets/js/testimonial.js"></script>
+    <script src="script.js"></script>
+
 </body>
 
 </html>
