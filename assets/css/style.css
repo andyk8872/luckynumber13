@@ -136,6 +136,11 @@ h2 {
   width: 70%;
 }
 
-
+.enterButtonHelp button{
+  visibility: hidden;
+  background-color: #000;
+  color: black;
+  overflow: hidden;
+}
 
 
