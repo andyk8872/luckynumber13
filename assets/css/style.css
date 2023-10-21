@@ -179,15 +179,15 @@ h2 {
   height: 50px;
   border-radius: 50%;
 }
-=======
+
 /* styling for help page */
-.brainContainer, .ghostbusterContainer{
+.brainContainer, .ghostbusterContainer, .darknessIntoLightContainer{
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
 }
-.brainWrapper, .ghostbusterWrapper{
+.brainWrapper, .ghostbusterWrapper, .darknessIntoLightWrapper{
   margin: 15vh auto;
   width: 70%;
 }
