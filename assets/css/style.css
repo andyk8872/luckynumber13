@@ -21,6 +21,27 @@ h1 {
   font-size: 4rem;
   font-family: 'Nosifer', cursive; 
 }
+h1 {
+  position: relative;
+}
+
+h1::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #ff0000; /* Change the color as desired */
+  box-sizing: border-box;
+  transform: scale(0);
+  transition: transform 0.2s;
+}
+
+h1:hover::after {
+  transform: scale(1);
+}
+
 
 .eyes {
   display: flex;
@@ -108,12 +129,17 @@ h2 {
   font-family: 'Nosifer', cursive;
   color: #FF5722 !important;
 }
-
+.nav-link:hover {
+  font-size: 23px;
+ 
+}
 .active>.nav-link {
   font-size: 1.2rem;
   font-family: 'Nosifer', cursive;
   color: #BF360C !important;
 }
+
+
 
 #image-gallery .modal-footer{
   display: block;
