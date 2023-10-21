@@ -19,7 +19,7 @@ header {
 
 h1 {
   font-size: 4rem;
-  font-family: 'Nosifer', cursive;
+  font-family: 'Nosifer', cursive; 
 }
 
 .eyes {
@@ -115,6 +115,75 @@ h2 {
   color: #BF360C !important;
 }
 
+<<<<<<< HEAD
+#image-gallery .modal-footer{
+  display: block;
+}
+
+
+
+
+/* style for meme page */
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.gallery-item {
+  flex: 0 0 calc(33.33% - 20px);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+}
+
+
+
+
+.bigger-image {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.bigger-image img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+/* style for footer */
+.footer-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-images a {
+  display: inline-block;
+  margin: 10px;
+}
+
+.footer-images img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+=======
 /* styling for help page */
 .brainContainer, .ghostbusterContainer{
   display: flex;
@@ -137,5 +206,6 @@ h2 {
 }
 
 
+>>>>>>> cd0aa6cf82f892170ceac7423fc9f8c3cb03dc6f
 
 
