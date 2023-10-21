@@ -115,6 +115,7 @@ h2 {
   color: #BF360C !important;
 }
 
+<<<<<<< HEAD
 #image-gallery .modal-footer{
   display: block;
 }
@@ -182,5 +183,29 @@ h2 {
   height: 50px;
   border-radius: 50%;
 }
+=======
+/* styling for help page */
+.brainContainer, .ghostbusterContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.brainWrapper, .ghostbusterWrapper{
+  margin: 15vh auto;
+  width: 70%;
+}
+
+.text-box{
+  color: white;
+}
+
+.ghostbusterWrapper img{
+  height: 50vh;
+  width: 70%;
+}
+
+
+>>>>>>> cd0aa6cf82f892170ceac7423fc9f8c3cb03dc6f
 
 
