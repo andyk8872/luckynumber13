@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Testimonials Section</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-5">Scary Coding Stories</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Add a Testimonial</h2>
+                <form id="reviewForm">
+                    <div class="mb-3">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="review">Scary Coding Story:</label>
+                        <textarea class="form-control" id="review" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Review</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h2>Recent Testimonials:</h2>
+                <div id="reviewList" class="row">
+                    <!-- Reviews will be displayed here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/testimonial.js"></script>
+</body>
+
+</html>

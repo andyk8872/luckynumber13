@@ -6,12 +6,20 @@ body {
   text-align: center;
 }
 
+.flex-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 header {
   margin: 20px 0;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 4rem;
+  font-family: 'Nosifer', cursive;
 }
 
 .eyes {
@@ -95,6 +103,22 @@ h2 {
   background-color: #BF360C;
 }
 
+.nav-item a {
+  font-size: 1.2rem;
+  font-family: 'Nosifer', cursive;
+  color: #FF5722 !important;
+}
+
+.active>.nav-link {
+  font-size: 1.2rem;
+  font-family: 'Nosifer', cursive;
+  color: #BF360C !important;
+}
+
+#image-gallery .modal-footer{
+  display: block;
+}
+
 
 
 
@@ -102,6 +126,10 @@ h2 {
 .btn:focus, .btn:active, button:focus, button:active {
   outline: none !important;
   box-shadow: none !important;
+.active>.nav-link {
+  font-size: 1.2rem;
+  font-family: 'Nosifer', cursive;
+  color: #BF360C !important;
 }
 
 #image-gallery .modal-footer{
@@ -111,4 +139,9 @@ h2 {
 .thumb{
   margin-top: 15px;
   margin-bottom: 15px;
+}
+
+
+
+
 }
