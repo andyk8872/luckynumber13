@@ -211,19 +211,15 @@ h2 {
   width: 50px;
 }
 
-<<<<<<< HEAD
 
-.brainContainer, .ghostbusterContainer, .darknessIntoLightContainer{
-=======
 /* styling for help page */
 .brainContainer, .ghostbusterContainer{
   align-items: center;
->>>>>>> 2e0b1e4c5d8753a859257b9c359719561616e9ee
   display: flex;
   justify-content: center;
   min-height: 100vh;
 }
-.brainWrapper, .ghostbusterWrapper, .darknessIntoLightWrapper{
+.brainWrapper, .ghostbusterWrapper{
   margin: 15vh auto;
   width: 70%;
 }
@@ -244,8 +240,6 @@ h2 {
   visibility: hidden;
 }
 
-<<<<<<< HEAD
-=======
 /*Styling for horror storries page*/
 .btn-primary {
   background-color: #EE5921;
@@ -258,4 +252,26 @@ h2 {
 .reasons {
   list-style: none;
 }
->>>>>>> 2e0b1e4c5d8753a859257b9c359719561616e9ee
+
+/*Styling for tricks page*/
+
+.tricks-img {
+  max-height: 400px;
+  max-width: 500px;
+}
+
+.tricks-list-container {
+  margin-left: 150px;
+}
+
+.tricks-list-title {
+  color: #EE5921;
+  text-align: left;
+}
+
+.tricks-list-text {
+  text-align: left;
+  max-width: 80%;
+  text-wrap: wrap;
+}
+
