@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nosifer', cursive;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(/assets/images/halloween-images/aesthetic-creepy-halloween-background-1920-x-1080-t4ujca96rjeyfmpn.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+ul:not(.nav-item, .navbar-nav, .bg-light){
+    margin-top: 50vh;
+    padding: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li:not(.nav-item, .navbar-nav, .bg-light){
+    list-style: none;
+    color: #980202;
+    font-size: 5em;
+    font-weight: bold;
+    letter-spacing: 10px;
+    filter: blur(1px);
+    transition: 4s;
+}
+
+ul li:not(.nav-item, .navbar-nav, .bg-light):hover,
+ul li:not(.nav-item, .navbar-nav, .bg-light):hover~li{
+    transform: rotate(180deg)translateX(-200px);
+    transition: 2s;
+    filter: blur(20px);
+    opacity: 0;
+}
+
+.imageContainer{
+    margin-top: 70vh;
+}
+
+#navbarNav{
+    overflow: hidden;
+    background: #fff;
+    margin-top: -1vh;
+}
+
+.navbar-nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-item{
+    color: #000;
+    text-align: center;
+    list-style-type: none;
+}
+
+
+.brainContainer, .ghostbusterContainer, .darknessIntoLightContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+  }
+   .brainWrapper, .ghostbusterWrapper, .darknessIntoLightWrapper{
+    margin: 15vh auto;
+    width: 70%;
+  }
+  
+  .text-box{
+    color: white;
+  }
+  
+  .ghostbusterWrapper img{
+    height: 50vh;
+    width: 70%;
+  }
+  
+  .enterButtonHelp button{
+    visibility: hidden;
+    background-color: #000;
+    color: black;
+    overflow: hidden;
+  } 
+
+/* style for footer */
+.footer-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-images a {
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  .footer-images img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .footer-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+.flex-wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+h2{
+    text-align: center;
+}
+
+.brainWrapper img, .ghostbusterWrapper img, .darknessIntoLightWrapper img{
+    margin-right: 2vw;
+}
+
+ul img{
+    height: 10vh;
+    padding: 1vw;
+    filter: brightness(30%);
+}
