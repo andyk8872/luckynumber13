@@ -169,3 +169,7 @@ $(document)
     e.preventDefault(); // prevent the default action (scroll / move caret)
   });
 
+  window.addEventListener('load', function() {
+    const h1 = document.querySelector('h1');
+    h1.classList.add('animated'); // Add a CSS class to trigger animation
+  });
