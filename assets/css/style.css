@@ -211,3 +211,67 @@ h2 {
   width: 50px;
 }
 
+
+/* styling for help page */
+.brainContainer, .ghostbusterContainer{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+.brainWrapper, .ghostbusterWrapper{
+  margin: 15vh auto;
+  width: 70%;
+}
+
+.text-box{
+  color: white;
+}
+
+.ghostbusterWrapper img{
+  height: 50vh;
+  width: 70%;
+}
+
+.enterButtonHelp button{
+  background-color: #000;
+  color: black;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+/*Styling for horror storries page*/
+.btn-primary {
+  background-color: #EE5921;
+  border-color: #EE5921;
+  color: #fff;
+  font-family: 'Nosifer', cursive;
+}
+
+/*Styling for helpppp page*/
+.reasons {
+  list-style: none;
+}
+
+/*Styling for tricks page*/
+
+.tricks-img {
+  max-height: 400px;
+  max-width: 500px;
+}
+
+.tricks-list-container {
+  margin-left: 150px;
+}
+
+.tricks-list-title {
+  color: #EE5921;
+  text-align: left;
+}
+
+.tricks-list-text {
+  text-align: left;
+  max-width: 80%;
+  text-wrap: wrap;
+}
+
