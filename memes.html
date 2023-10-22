@@ -35,13 +35,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="tricks.html">Tricks</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="memes.html">Treats</a>
             </li>
             <li class="nav-item">
@@ -57,16 +57,13 @@
     </header>
 
     <div class="container">
-      <h1>Nightmare on Meme Street</h1>
+      <h1 class="mt-4 mb-4">Nightmare on Meme Street</h1>
     </div>
-    <div class="gallery">
+    <div class="gallery mb-5 mx-3">
       <!-- Gallery items will be inserted here dynamically using JavaScript -->
     </div>
 
 
-    <div class="enterButtonWrapper">
-      <button type="button" title="enterButton" class="enterButton">Enter if you dare!</button>
-    </div>
 
     <footer class="container-fluid footer-container">
       <div>Project by Team 13 - Hackathon Oct '23</div>
@@ -89,13 +86,9 @@
     chatbot_id="792598a0-ec7b-46c1-8ceb-4f601894a52b"><a
       href="https://www.chatsimple.ai/?utm_source=widget&utm_medium=referral">[chatbot]</a></chat-bot>
   <script src="https://chatsimple-widget.s3.us-east-2.amazonaws.com/chat-bot-loader.js" defer></script>
-  <!-- audio html -->
-  <audio class="scaryEnterSound">
-    <source src="./audio/Enter If You Dare.mp3" type="audio/mpeg">
-  </audio>
-  <!-- audio html -->
-  <audio class="scaryEnterSound" src="./audio/Enter If You Dare.mp3"></audio>
+  
   <script src="script.js"></script>
+  <script>initializeGallery();</script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
