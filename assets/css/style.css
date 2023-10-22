@@ -217,11 +217,17 @@ h2 {
   align-items: center;
   display: flex;
   justify-content: center;
+  margin-bottom: 20em;
   min-height: 100vh;
 }
+
 .brainWrapper, .ghostbusterWrapper{
-  margin: 15vh auto;
+  margin: 2vh auto;
   width: 70%;
+}
+
+.brainWrapper img {
+  padding-bottom: 20px;
 }
 
 .text-box{
@@ -230,6 +236,7 @@ h2 {
 
 .ghostbusterWrapper img{
   height: 50vh;
+  padding-bottom: 10px;
   width: 70%;
 }
 
@@ -240,6 +247,16 @@ h2 {
   visibility: hidden;
 }
 
+.reasons {
+  list-style: none;
+}
+
+.helpLinks {
+  list-style: none;
+  margin-left: 20em;
+  text-align: left;
+}
+
 /*Styling for horror storries page*/
 .btn-primary {
   background-color: #EE5921;
@@ -247,6 +264,7 @@ h2 {
   color: #fff;
   font-family: 'Nosifer', cursive;
 }
+
 
 .story-img {
   max-width: 50px;
@@ -257,6 +275,7 @@ h2 {
 .reasons {
   list-style: none;
 }
+
 
 /*Styling for tricks page*/
 
