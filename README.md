@@ -1,12 +1,17 @@
 
 <h1 align="center"><strong>Scary Life of Coders</strong></h1>
 
-![Home Page]()
+![Home Page](assets/images/640-abstract-ghost-devil-in-smoke-black-and-white-halloween-and-creepy-concept-digital-art.jpg)
 
 # SUBMISSION
 ## Deployment
 #### _(please note, your team must also include the deployed links in the usual submission in Hackapp)_
 The project is deployed and can be accessed at [http://your-deployed-link.com](http://your-deployed-link.com).
+
+### Forking the GitHub Repository
+- 🎃 Go to the GitHub repository.
+- 🎃 In the top right hand corner you can click on the fork button.
+- 🎃 This will fork the repository.
 
 ## Intro
 Welcome to "Scary Life of Coders" – the one-stop destination for all things coding, hilariously relatable, and sometimes downright frightening. We invite you to embark on a journey through the enigmatic world of coding, where we blend laughter, shivers, and invaluable insights.<br>
@@ -54,9 +59,17 @@ In the tech section, we provide information about the technology stack, dependen
 
 ## Credits
 
+- 🎃Home Page image taken from [Vecteezy](https://www.vecteezy.com), owner [Nongnuch Leelaphasuk]("https://www.vecteezy.com/photo/10377366-abstract-ghost-devil-in-smoke-black-and-white-halloween-and-creepy-concept-digital-art")
+- 🎃Fonts used are taken from [Google fonts](https://fonts.google.com/)
+- 🎃Helpppp page image taken from [Vecteezy](https://www.vecteezy.com), owner [Ahasanara Akter]("https://www.vecteezy.com/photo/22909254-human-brain-medical-and-health-care-conceptual-illustration-3d-render-generate-ai")
 - 🎃
 - 🎃
 - 🎃
-- 🎃
-- 🎃
-- 🎃
+- 🎃 Credits and Thank You to all our team ***Creepy Coders*** for input during the project and great communication via Slack channel chat and calls.
+  - 🎃 [Andrew Kennedy](https://github.com/ocassidydev)
+  - 🎃 [John Walshe](https://github.com/JWalshe86)
+  - 🎃 [Viola Bergere](https://github.com/ocassidydev)
+  - 🎃 [Kim Hanlon](https://github.com/kimatron)
+  - 🎃 [Kelly Hutchison](https://github.com/quiltingcode)
+  - 🎃 [Vasilica Pavaloi](https://github.com/Vasi012)
+  
