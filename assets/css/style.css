@@ -4,6 +4,7 @@ body {
   background: #000;
   color: white;
   text-align: center;
+  display: flex
 }
 
 .flex-wrapper {
@@ -180,7 +181,7 @@ h2 {
   border-radius: 50%;
 }
 
-/* styling for help page */
+
 .brainContainer, .ghostbusterContainer, .darknessIntoLightContainer{
   display: flex;
   justify-content: center;
@@ -207,6 +208,4 @@ h2 {
   color: black;
   overflow: hidden;
 }
-
-
 
