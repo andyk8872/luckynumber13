@@ -1,12 +1,19 @@
 
-<h1 align="center"><strong>Scary Life of Coders</strong></h1>
+<h1 align="center"><strong>The Scaaaaary Life of Coders</strong></h1>
 
-![Home Page](assets/images/640-abstract-ghost-devil-in-smoke-black-and-white-halloween-and-creepy-concept-digital-art.jpg)
+<p align = "center">
+<img src = assets/images/640-abstract-ghost-devil-in-smoke-black-and-white-halloween-and-creepy-concept-digital-art.jpg></p>
 
-# SUBMISSION
-## Deployment
-#### _(please note, your team must also include the deployed links in the usual submission in Hackapp)_
-The project is deployed and can be accessed at [http://your-deployed-link.com](http://your-deployed-link.com).
+## **Deployment**
+
+The website was deployed to GitHub pages:
+
+- 🎃 From this project's [link for repository](https://github.com/andyk8872/luckynumber13), go to the **Settings**.
+- 🎃 From the left-hand menu, click on the **Pages**.
+- 🎃 Under the **Source** section, select the **Main** branch from the drop-down menu and click **Save**.
+- 🎃 A message will appear to confirm a successful deployment to GitHub pages and provide the live link.
+
+Live link to the website - [The Scaaaaary Life of Coders](https://andyk8872.github.io/luckynumber13/)
 
 ### Forking the GitHub Repository
 - 🎃 Go to the GitHub repository.
@@ -14,7 +21,7 @@ The project is deployed and can be accessed at [http://your-deployed-link.com](h
 - 🎃 This will fork the repository.
 
 ## Intro
-Welcome to "Scary Life of Coders" – the one-stop destination for all things coding, hilariously relatable, and sometimes downright frightening. We invite you to embark on a journey through the enigmatic world of coding, where we blend laughter, shivers, and invaluable insights.<br>
+Welcome to "The Scaaaaary Life of Coders" – the one-stop destination for all things coding, hilariously relatable, and sometimes downright frightening. We invite you to embark on a journey through the enigmatic world of coding, where we blend laughter, shivers, and invaluable insights.<br>
 We understand that the life of a programmer isn't all fun and games. That's why we've dedicated a section to mental health, providing resources and guidance in maintaining a healthy work-life balance and managing the stress that comes with the territory. Dive in, laugh, learn, and enjoy the rollercoaster ride that is the coder's life!
 
 ## **Planning Stage**
@@ -62,9 +69,9 @@ In the tech section, we provide information about the technology stack, dependen
 - 🎃Home Page image taken from [Vecteezy](https://www.vecteezy.com), owner [Nongnuch Leelaphasuk]("https://www.vecteezy.com/photo/10377366-abstract-ghost-devil-in-smoke-black-and-white-halloween-and-creepy-concept-digital-art")
 - 🎃Fonts used are taken from [Google fonts](https://fonts.google.com/)
 - 🎃Helpppp page image taken from [Vecteezy](https://www.vecteezy.com), owner [Ahasanara Akter]("https://www.vecteezy.com/photo/22909254-human-brain-medical-and-health-care-conceptual-illustration-3d-render-generate-ai")
-- 🎃
-- 🎃
-- 🎃
+- 🎃 Tricks Page pumpkin image taken from [Unsplash](https://unsplash.com), owner [Lucia Foster](https://unsplash.com/photos/jack-o-lantern-with-light-qPtB_GTcyO8)
+- 🎃 Information for tricks page was gathered from [Medium.com](https://medium.com/@joshuatyler/the-magic-of-coding-30e58ce31032) and [Codeminer blog](https://blog.codeminer42.com/unravel-the-magic-of-programming/)
+- 🎃 Favicon created using [Faviconer](http://www.faviconer.com/)
 - 🎃 Credits and Thank You to all our team ***Creepy Coders*** for input during the project and great communication via Slack channel chat and calls.
   - 🎃 [Andrew Kennedy](https://github.com/ocassidydev)
   - 🎃 [John Walshe](https://github.com/JWalshe86)
