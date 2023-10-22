@@ -217,5 +217,10 @@ h2 {
   visibility: hidden;
 }
 
-
+/*Styling for horror storries page*/
+.btn-primary {
+  color: #fff;
+  background-color: #EE5921;
+  border-color: #EE5921;
+}
 
