@@ -11,7 +11,7 @@ body{
     position: relative;
 }
 
-ul:not(.nav-item, .navbar-nav, .bg-light){
+ul:not(.reasons li, .reasons, .nav-item, .navbar-nav, .bg-light){
     margin-top: 50vh;
     padding: 0;
     display: flex;
@@ -20,7 +20,7 @@ ul:not(.nav-item, .navbar-nav, .bg-light){
     align-items: center;
 }
 
-ul li:not(.nav-item, .navbar-nav, .bg-light){
+ ul li:not(.reasons li, .nav-item, .navbar-nav, .bg-light){
     list-style: none;
     color: #980202;
     font-size: 5em;
@@ -30,8 +30,8 @@ ul li:not(.nav-item, .navbar-nav, .bg-light){
     transition: 4s;
 }
 
-ul li:not(.nav-item, .navbar-nav, .bg-light):hover,
-ul li:not(.nav-item, .navbar-nav, .bg-light):hover~li{
+li:not(.reasons li, .nav-item, .navbar-nav, .bg-light, .enterButtonHel):hover,
+li:not(.reasons li, .nav-item, .navbar-nav, .bg-light):hover~li{
     transform: rotate(180deg)translateX(-200px);
     transition: 2s;
     filter: blur(20px);
@@ -60,14 +60,14 @@ ul li:not(.nav-item, .navbar-nav, .bg-light):hover~li{
 }
 
 
-.brainContainer, .ghostbusterContainer, .darknessIntoLightContainer{
+.brainContainer, .ghostbusterContainer, .darknessIntoLightContainer, .reasonsContainer{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background-color: black;
   }
-   .brainWrapper, .ghostbusterWrapper, .darknessIntoLightWrapper{
+   .brainWrapper, .ghostbusterWrapper, .darknessIntoLightWrapper, .reasonsWrapper{
     margin: 15vh auto;
     width: 70%;
   }
@@ -131,4 +131,8 @@ ul img{
     height: 10vh;
     padding: 1vw;
     filter: brightness(30%);
+}
+
+.reasons{
+    list-style-type: none;
 }
