@@ -52,12 +52,7 @@ h1 {
 h2 {
   font-family: 'Nosifer', cursive;
   margin-bottom: 20px;
-  size: 24px;
-}
-
-#quote {
-  font-family: 'Nosifer', cursive;
-  font-size: 24px;
+  size: 20px;
 }
 
 .enterButtonWrapper {
@@ -219,8 +214,9 @@ h2 {
 
 /*Styling for horror storries page*/
 .btn-primary {
-  color: #fff;
   background-color: #EE5921;
   border-color: #EE5921;
+  color: #fff;
+  font-family: 'Nosifer', cursive;
 }
 
