@@ -272,52 +272,6 @@ h2 {
   font-family: 'Nosifer', cursive;
 }
 
-
-
-#image-gallery .modal-footer{
-  display: block;
-}
-
-/* style for meme page */
-.gallery {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.gallery-item {
-  border-radius: 10px;
-  flex: 0 0 calc(25% - 20px); /* Adjust the value to make the items smaller */
-  overflow: hidden;
-}
-
-.gallery-item img {
-  cursor: pointer;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  width: 100%;
-}
-
-.bigger-image {
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.7);
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 999;
-}
-
-.bigger-image img {
-  max-height: 90%;
-  max-width: 90%;
-}
-
 /* style for footer */
 .footer-container{
   font-family: 'Nosifer', cursive;
