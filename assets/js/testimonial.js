@@ -12,6 +12,7 @@ function addReview(name, title, review) {
         name: name,
         title: title,
         review: review,        
+
     };
     reviews.push(reviewItem);
     displayReviews();
@@ -39,9 +40,10 @@ function displayReviews() {
             <div class="card border border-4 border-warning">                
                 <img src="/assets/images/${randomImageNumber}.jpg" class="card-img-top" alt="User Image">
                 <div class="card-body">
-                    <h5 class="card-title">${review.name}</h5>
-                    <p class="card-text">${review.title}</p>
-                    <p class="card-text">${review.review}</p>                  
+                    <h5 class="card-title">${review.title}</h5>
+                    <p class="card-text">${review.review}</p>
+                    <p class="card-footer">${review.name}</p>
+
                 </div>
             </div>
         `;
@@ -60,6 +62,7 @@ reviewForm.addEventListener("submit", (e) => {
     const title = document.getElementById("title").value;
 
     addReview(name, title, review);
+
      // Save the reviews to local storage
      saveReviews();
 
@@ -67,19 +70,19 @@ reviewForm.addEventListener("submit", (e) => {
     reviewForm.reset();
 });
 
-/* eyeball function on mainpage */
-const balls = document.getElementsByClassName("ball");
-document.onmousemove = function () {
-    let x = event.clientX * 100 / window.innerWidth + "%";
-    let y = event.clientY * 100 / window.innerHeight + "%";
-    // event.cilentX => get the horizontal coordinate of the mouse
-    // event.cilentY => get the vertical coordinate of the mouse
-    // window.innerWidth => get the browser width
-    // window.innerHeight => get the browser height
+// /* eyeball function on mainpage */
+// const balls = document.getElementsByClassName("ball");
+// document.onmousemove = function () {
+//     let x = event.clientX * 100 / window.innerWidth + "%";
+//     let y = event.clientY * 100 / window.innerHeight + "%";
+//     // event.cilentX => get the horizontal coordinate of the mouse
+//     // event.cilentY => get the vertical coordinate of the mouse
+//     // window.innerWidth => get the browser width
+//     // window.innerHeight => get the browser height
 
-    for (let i = 0; i < 2; i++) {
-        balls[i].style.left = x;
-        balls[i].style.top = y;
-        balls[i].style.transform = "translate(-" + x + ", -" + y + ")";
-    }
-}
+//     for (let i = 0; i < 2; i++) {
+//         balls[i].style.left = x;
+//         balls[i].style.top = y;
+//         balls[i].style.transform = "translate(-" + x + ", -" + y + ")";
+//     }
+// }
