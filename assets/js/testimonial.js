@@ -30,7 +30,7 @@ function displayReviews() {
     reviewList.innerHTML = "";
 
     reviews.forEach((review, index) => {
-        const randomImageNumber = Math.floor(Math.random() * 3) + 1;
+        const randomImageNumber = Math.floor(Math.random() * 4) + 1;
         const card = document.createElement("div");
         card.classList.add("col-md-6", "mb-3");
 
