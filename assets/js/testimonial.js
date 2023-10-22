@@ -7,11 +7,12 @@ function saveReviews() {
 } 
 
 // Function to add a review
-function addReview(name, review) {
+function addReview(name, title, review) {
     const reviewItem = {
         name: name,
         title: title,
-        review: review
+        review: review,        
+
     };
     reviews.push(reviewItem);
     displayReviews();
@@ -42,6 +43,7 @@ function displayReviews() {
                     <h5 class="card-title">${review.title}</h5>
                     <p class="card-text">${review.review}</p>
                     <p class="card-footer">${review.name}</p>
+
                 </div>
             </div>
         `;
@@ -59,7 +61,8 @@ reviewForm.addEventListener("submit", (e) => {
     const review = document.getElementById("review").value;
     const title = document.getElementById("title").value;
 
-    addReview(name, review, title);
+    addReview(name, title, review);
+
      // Save the reviews to local storage
      saveReviews();
 
