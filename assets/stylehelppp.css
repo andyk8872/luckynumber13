@@ -1,136 +1,396 @@
-body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Nosifer', cursive;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    position: relative;
+/* body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Nosifer', cursive;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
 }
-
-ul:not(.reasons li, .reasons, .nav-item, .navbar-nav, .bg-light){
-    margin-top: 50vh;
-    padding: 0;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-}
-
- ul li:not(.reasons li, .nav-item, .navbar-nav, .bg-light){
-    list-style: none;
-    color: #980202;
-    font-size: 5em;
-    font-weight: bold;
-    letter-spacing: 10px;
-    filter: blur(1px);
-    transition: 4s;
-}
-
-li:not(.reasons li, .nav-item, .navbar-nav, .bg-light, .enterButtonHel):hover,
-li:not(.reasons li, .nav-item, .navbar-nav, .bg-light):hover~li{
-    transform: rotate(180deg)translateX(-200px);
-    transition: 2s;
-    filter: blur(20px);
-    opacity: 0;
-}
-
 
 .imageContainer{
-    margin-top: 70vh;
+  margin-top: 70vh;
 }
 
 #navbarNav{
-    overflow: hidden;
-    background: #fff;
-    margin-top: -1vh;
+  overflow: hidden;
+  background: #fff;
+  margin-top: -1vh;
 }
 
 .navbar-nav{
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .nav-item{
-    color: #000;
-    text-align: center;
-    list-style-type: none;
+  color: #000;
+  text-align: center;
+  list-style-type: none;
 }
 
 
-.brainContainer, .ghostbusterContainer, .darknessIntoLightContainer, .reasonsContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: black;
-  }
-   .brainWrapper, .ghostbusterWrapper, .darknessIntoLightWrapper, .reasonsWrapper{
-    margin: 15vh auto;
-    width: 70%;
-  }
-  
-  .text-box{
-    color: white;
-  }
-  
-  .ghostbusterWrapper img{
-    height: 50vh;
-    width: 70%;
-  }
-  
-  .enterButtonHelp button{
-    visibility: hidden;
-    background-color: #000;
-    color: black;
-    overflow: hidden;
-  }
+.brainContainer, .ghostbusterContainer, .darknessIntoLightContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: black;
+}
+ .brainWrapper, .ghostbusterWrapper, .darknessIntoLightWrapper{
+  margin: 15vh auto;
+  width: 70%;
+}
+
+.text-box{
+  color: white;
+}
+
+.ghostbusterWrapper img{
+  height: 50vh;
+  width: 70%;
+}
+
+.enterButtonHelp button{
+  visibility: hidden;
+  background-color: #000;
+  color: black;
+  overflow: hidden;
+}
 
 
 .footer-images {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .footer-images a {
-    display: inline-block;
-    margin: 10px;
-  }
-  
-  .footer-images img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .footer-container{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+.footer-images a {
+  display: inline-block;
+  margin: 10px;
+}
+
+.footer-images img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.footer-container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
 .flex-wrapper {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
 }
 h2{
-    text-align: center;
+  text-align: center;
 }
 
 .brainWrapper img, .ghostbusterWrapper img, .darknessIntoLightWrapper img{
-    margin-right: 2vw;
+  margin-right: 2vw;
 }
 
 ul img{
-    height: 10vh;
-    padding: 1vw;
-    filter: brightness(30%);
+  height: 10vh;
+  padding: 1vw;
+  filter: brightness(30%);
+}
+
+.flex-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+h2{
+  text-align: center;
+}
+
+.brainWrapper img, .ghostbusterWrapper img, .darknessIntoLightWrapper img{
+  margin-right: 2vw;
+}
+
+ul img{
+  height: 10vh;
+  padding: 1vw;
+  filter: brightness(30%);
 }
 
 .reasons{
-    list-style-type: none;
+  list-style-type: none;
+} */
+
+
+body {
+  background: #000;
+  color: white;
+  text-align: center;
+  display: flex
 }
+
+.flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+header {
+  margin: 20px 0;
+}
+
+h1 {
+  color: #EE5921;
+  font-family: 'Nosifer', cursive;
+  font-size: 4rem; 
+}
+h1 {
+  position: relative;
+}
+
+h1::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #ff0000; /* Change the color as desired */
+  box-sizing: border-box;
+  transform: scale(0);
+  transition: transform 0.2s;
+}
+
+h1:hover::after {
+  transform: scale(1);
+}
+
+
+.eyes {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.eye {
+  background-color: #212121;
+  border-radius: 50%;
+  height: 120px;
+  margin: 20px;
+  position: relative;
+  width: 120px;
+}
+
+.ball {
+  background-color: white;
+  border-radius: 50%;
+  height: 50px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+}
+
+h2 {
+  font-family: 'Nosifer', cursive;
+  margin-bottom: 20px;
+  size: 20px;
+}
+
+.enterButtonWrapper {
+  margin-bottom: 10px;
+}
+
+.enterButton {
+  background-color: #EE5921;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-family: 'Nosifer', cursive;
+  font-size: 24px;
+  margin: 20px 0;
+  padding: 12px 24px;
+  transition: background-color 0.3s;
+}
+
+.enterButton:hover {
+  background-color: #BF360C;
+}
+
+.meme {
+  background-color: #EE5921;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 12px 24px;
+  transition: background-color 0.3s;
+}
+
+.meme:hover {
+  background-color: #BF360C;
+}
+
+.tricks {
+  background-color: #EE5921;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 12px 24px;
+  transition: background-color 0.3s;
+}
+
+.tricks:hover {
+  background-color: #BF360C;
+}
+
+.nav-item a {
+  color: #EE5921 !important;
+  font-size: 1.2rem;
+  font-family: 'Nosifer', cursive;
+}
+.nav-link:hover {
+  font-size: 23px;
+ 
+}
+.active>.nav-link {
+  color: #BF360C !important;
+  font-size: 1.2rem;
+  font-family: 'Nosifer', cursive;
+}
+
+
+
+#image-gallery .modal-footer{
+  display: block;
+}
+
+/* style for meme page */
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.gallery-item {
+  border-radius: 10px;
+  flex: 0 0 calc(25% - 20px); /* Adjust the value to make the items smaller */
+  overflow: hidden;
+}
+
+.gallery-item img {
+  cursor: pointer;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+.bigger-image {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+}
+
+.bigger-image img {
+  max-height: 90%;
+  max-width: 90%;
+}
+
+/* style for footer */
+.footer-container{
+  font-family: 'Nosifer', cursive;
+  font-size: 14px;
+}
+.footer-images {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-images a {
+  display: inline-block;
+  margin: 10px;
+}
+
+.footer-images img {
+  height: 50px;
+  border-radius: 50%;
+  width: 50px;
+}
+
+
+/* styling for help page */
+.brainContainer, .ghostbusterContainer{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2vh;
+  min-height: 100vh;
+}
+
+.brainWrapper, .ghostbusterWrapper{
+  margin: 2vh auto;
+  width: 70%;
+}
+
+.brainWrapper img {
+  padding-bottom: 20px;
+}
+
+.text-box{
+  color: white;
+}
+
+.ghostbusterWrapper img{
+  padding-bottom: 10px;
+  width: 70%;
+}
+
+.enterButtonHelp button{
+  background-color: #000;
+  color: black;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.reasons {
+  list-style: none;
+}
+
+.helpLinks {
+  list-style: none;
+  margin-left: 20em;
+  text-align: left;
+}
+
+
+/*Styling for helpppp page*/
+.reasons {
+  list-style: none;
+}
+
+
+
+
