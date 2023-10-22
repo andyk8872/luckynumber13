@@ -48,7 +48,6 @@ h1:hover::after {
   align-items: center;
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
 }
 
 .eye {
@@ -143,8 +142,6 @@ h2 {
   font-family: 'Nosifer', cursive;
 }
 
-
-
 #image-gallery .modal-footer{
   display: block;
 }
@@ -217,12 +214,10 @@ h2 {
   align-items: center;
   display: flex;
   justify-content: center;
-  margin-bottom: 20em;
-  min-height: 100vh;
+  margin-bottom: 10em;
 }
 
 .brainWrapper, .ghostbusterWrapper{
-  margin: 2vh auto;
   width: 70%;
 }
 
@@ -265,7 +260,6 @@ h2 {
   font-family: 'Nosifer', cursive;
 }
 
-
 .story-img {
   max-width: 50px;
   max-height: 50px;
@@ -275,7 +269,6 @@ h2 {
 .reasons {
   list-style: none;
 }
-
 
 /*Styling for tricks page*/
 
