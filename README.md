@@ -67,6 +67,7 @@ In the tech section, we provide information about the technology stack, dependen
 ## Credits
 
 - 🎃Home Page image taken from [Vecteezy](https://www.vecteezy.com), owner [Nongnuch Leelaphasuk]("https://www.vecteezy.com/photo/10377366-abstract-ghost-devil-in-smoke-black-and-white-halloween-and-creepy-concept-digital-art")
+- 🎃Helpppp Page image taken from [Vecteezy](https://www.vecteezy.com), owner [style graphic]("https://www.vecteezy.com/photo/31283002-human-in-spooky-ghosts-costume-flying-inside-the-old-house-at-night-spooky-halloween-background-with-ghost-ghost-on-halloween-celebration-concept-by-ai-generated")
 - 🎃Fonts used are taken from [Google fonts](https://fonts.google.com/)
 - 🎃Helpppp page image taken from [Vecteezy](https://www.vecteezy.com), owner [Ahasanara Akter]("https://www.vecteezy.com/photo/22909254-human-brain-medical-and-health-care-conceptual-illustration-3d-render-generate-ai")
 - 🎃 Tricks Page pumpkin image taken from [Unsplash](https://unsplash.com), owner [Lucia Foster](https://unsplash.com/photos/jack-o-lantern-with-light-qPtB_GTcyO8)
