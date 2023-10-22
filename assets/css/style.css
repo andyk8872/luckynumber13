@@ -266,6 +266,7 @@ h2 {
 
 .tricks-list-title {
   color: #EE5921;
+  list-style: none;
   text-align: left;
 }
 
