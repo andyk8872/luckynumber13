@@ -1,123 +1,39 @@
-/* body{
-  margin: 0;
+
+ul:not(.reasons li, .reasons, .nav-item, .navbar-nav, .bg-light, .helpLinks li, .helpLinks){
+  margin-top: 50vh;
   padding: 0;
-  font-family: 'Nosifer', cursive;
+  /* display: flex; */
+  flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  position: relative;
 }
 
+ul li:not(.reasons li, .nav-item, .navbar-nav, .bg-light, .helpLinks li){
+  list-style: none;
+  color: #980202;
+  font-size: 5em;
+  font-weight: bold;
+  letter-spacing: 10px;
+  filter: blur(1px);
+  transition: 4s;
+  display: inline-block;
+}
+
+
+
+li:not(.reasons li, .nav-item, .navbar-nav, .bg-light, .enterButtonHel, .helpLinks li):hover,
+li:not(.reasons li, .nav-item, .navbar-nav, .bg-light, .helpLinks li):hover~li{
+  transform: rotate(180deg)translateX(-200px);
+  transition: 2s;
+  filter: blur(20px);
+  opacity: 0;
+}
+ 
 .imageContainer{
   margin-top: 70vh;
-}
+} 
 
-#navbarNav{
-  overflow: hidden;
-  background: #fff;
-  margin-top: -1vh;
-}
-
-.navbar-nav{
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.nav-item{
-  color: #000;
-  text-align: center;
-  list-style-type: none;
-}
-
-
-.brainContainer, .ghostbusterContainer, .darknessIntoLightContainer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: black;
-}
- .brainWrapper, .ghostbusterWrapper, .darknessIntoLightWrapper{
-  margin: 15vh auto;
-  width: 70%;
-}
-
-.text-box{
-  color: white;
-}
-
-.ghostbusterWrapper img{
-  height: 50vh;
-  width: 70%;
-}
-
-.enterButtonHelp button{
-  visibility: hidden;
-  background-color: #000;
-  color: black;
-  overflow: hidden;
-}
-
-
-.footer-images {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer-images a {
-  display: inline-block;
-  margin: 10px;
-}
-
-.footer-images img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-}
-
-.footer-container{
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.flex-wrapper {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  justify-content: space-between;
-}
-h2{
-  text-align: center;
-}
-
-.brainWrapper img, .ghostbusterWrapper img, .darknessIntoLightWrapper img{
-  margin-right: 2vw;
-}
-
-ul img{
-  height: 10vh;
-  padding: 1vw;
-  filter: brightness(30%);
-}
-
-.flex-wrapper {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  justify-content: space-between;
-}
-h2{
-  text-align: center;
-}
-
-.brainWrapper img, .ghostbusterWrapper img, .darknessIntoLightWrapper img{
-  margin-right: 2vw;
-}
-
-ul img{
+ul img:not(.ghostbusterWrapper img, .footer-images img, .darknessIntoLightWrapper img, .brainWrapper img){
   height: 10vh;
   padding: 1vw;
   filter: brightness(30%);
@@ -125,14 +41,30 @@ ul img{
 
 .reasons{
   list-style-type: none;
-} */
+} 
 
 
 body {
   background: #000;
   color: white;
   text-align: center;
-  display: flex
+  display: flex;
+   margin: 0;
+  padding: 0;
+  
+ 
+
+ justify-content: center; 
+
+font-family: 'Nosifer', cursive;
+  
+  height: 100vh;
+  
+  background-image: url(/assets/images/halloween-images/aesthetic-creepy-halloween-background-1920-x-1080-t4ujca96rjeyfmpn.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  position: relative; 
 }
 
 .flex-wrapper {
@@ -264,7 +196,7 @@ h2 {
 }
 .nav-link:hover {
   font-size: 23px;
- 
+
 }
 .active>.nav-link {
   color: #BF360C !important;
@@ -311,6 +243,7 @@ h2 {
 
 .brainWrapper img {
   padding-bottom: 20px;
+  margin-top: 30vh;
 }
 
 .text-box{
