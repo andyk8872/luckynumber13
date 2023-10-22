@@ -7,10 +7,11 @@ function saveReviews() {
 } 
 
 // Function to add a review
-function addReview(name, review) {
+function addReview(name, title, review) {
     const reviewItem = {
         name: name,
-        review: review
+        title: title,
+        review: review,        
     };
     reviews.push(reviewItem);
     displayReviews();
@@ -39,7 +40,8 @@ function displayReviews() {
                 <img src="/assets/images/${randomImageNumber}.jpg" class="card-img-top" alt="User Image">
                 <div class="card-body">
                     <h5 class="card-title">${review.name}</h5>
-                    <p class="card-text">${review.review}</p>
+                    <p class="card-text">${review.title}</p>
+                    <p class="card-text">${review.review}</p>                  
                 </div>
             </div>
         `;
@@ -55,8 +57,9 @@ reviewForm.addEventListener("submit", (e) => {
 
     const name = document.getElementById("name").value;
     const review = document.getElementById("review").value;
+    const title = document.getElementById("title").value;
 
-    addReview(name, review);
+    addReview(name, title, review);
      // Save the reviews to local storage
      saveReviews();
 
