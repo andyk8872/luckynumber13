@@ -13,7 +13,7 @@ The website was deployed to GitHub pages:
 - 🎃 Under the **Source** section, select the **Main** branch from the drop-down menu and click **Save**.
 - 🎃 A message will appear to confirm a successful deployment to GitHub pages and provide the live link.
 
-Live link to the website - [The Scaaaaary Life of Coding](https://andyk8872.github.io/luckynumber13/)
+Live link to the website - [The Scaaaaary Life of Coders](https://andyk8872.github.io/luckynumber13/)
 
 ### Forking the GitHub Repository
 - 🎃 Go to the GitHub repository.
