@@ -1,6 +1,5 @@
 
 body {
-  font-family: 'Nosifer', cursive;
   background: #000;
   color: white;
   text-align: center;
@@ -9,9 +8,9 @@ body {
 
 .flex-wrapper {
   display: flex;
-  min-height: 100vh;
   flex-direction: column;
   justify-content: space-between;
+  min-height: 100vh;
 }
 
 header {
@@ -19,40 +18,63 @@ header {
 }
 
 h1 {
-  font-size: 4rem;
-  font-family: 'Nosifer', cursive; 
+  color: #EE5921;
+  font-family: 'Nosifer', cursive;
+  font-size: 4rem; 
+}
+h1 {
+  position: relative;
 }
 
+h1::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #ff0000; /* Change the color as desired */
+  box-sizing: border-box;
+  transform: scale(0);
+  transition: transform 0.2s;
+}
+
+h1:hover::after {
+  transform: scale(1);
+}
+
+
 .eyes {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
   margin-bottom: 20px;
 }
 
 .eye {
-  width: 150px;
-  height: 150px;
-  position: relative;
-  border-radius: 50%;
   background-color: #212121;
+  border-radius: 50%;
+  height: 150px;
   margin: 20px;
+  position: relative;
+  width: 150px;
 }
 
 .ball {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  border-radius: 50%;
   background-color: white;
-  top: 50%;
+  border-radius: 50%;
+  height: 50px;
   left: 50%;
+  position: absolute;
+  top: 50%;
   transform: translate(-50%, -50%);
+  width: 50px;
 }
 
 h2 {
- size: 24px;
+  font-family: 'Nosifer', cursive;
   margin-bottom: 20px;
+  size: 20px;
 }
 
 .enterButtonWrapper {
@@ -60,13 +82,15 @@ h2 {
 }
 
 .enterButton {
-  font-size: 24px;
-  background-color: #FF5722;
-  color: white;
-  padding: 12px 24px;
+  background-color: #EE5921;
   border: none;
   border-radius: 5px;
+  color: white;
   cursor: pointer;
+  font-family: 'Nosifer', cursive;
+  font-size: 24px;
+  margin: 20px 0;
+  padding: 12px 24px;
   transition: background-color 0.3s;
 }
 
@@ -75,13 +99,13 @@ h2 {
 }
 
 .meme {
-  font-size: 24px;
-  background-color: #FF5722;
-  color: white;
-  padding: 12px 24px;
+  background-color: #EE5921;
   border: none;
   border-radius: 5px;
+  color: white;
   cursor: pointer;
+  font-size: 24px;
+  padding: 12px 24px;
   transition: background-color 0.3s;
 }
 
@@ -90,13 +114,13 @@ h2 {
 }
 
 .tricks {
-  font-size: 24px;
-  background-color: #FF5722;
-  color: white;
-  padding: 12px 24px;
+  background-color: #EE5921;
   border: none;
   border-radius: 5px;
+  color: white;
   cursor: pointer;
+  font-size: 24px;
+  padding: 12px 24px;
   transition: background-color 0.3s;
 }
 
@@ -105,16 +129,21 @@ h2 {
 }
 
 .nav-item a {
+  color: #EE5921 !important;
   font-size: 1.2rem;
   font-family: 'Nosifer', cursive;
-  color: #FF5722 !important;
+}
+.nav-link:hover {
+  font-size: 23px;
+ 
+}
+.active>.nav-link {
+  color: #BF360C !important;
+  font-size: 1.2rem;
+  font-family: 'Nosifer', cursive;
 }
 
-.active>.nav-link {
-  font-size: 1.2rem;
-  font-family: 'Nosifer', cursive;
-  color: #BF360C !important;
-}
+
 
 #image-gallery .modal-footer{
   display: block;
@@ -129,45 +158,46 @@ h2 {
 }
 
 .gallery-item {
-  flex: 0 0 calc(25% - 20px); /* Adjust the value to make the items smaller */
   border-radius: 10px;
+  flex: 0 0 calc(25% - 20px); /* Adjust the value to make the items smaller */
   overflow: hidden;
 }
 
 .gallery-item img {
-  width: 100%;
+  cursor: pointer;
   height: 100%;
   object-fit: cover;
   object-position: center;
-  cursor: pointer;
+  width: 100%;
 }
 
-
-
-
 .bigger-image {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: flex;
   align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  bottom: 0;
+  display: flex;
   justify-content: center;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
   z-index: 999;
 }
 
 .bigger-image img {
-  max-width: 90%;
   max-height: 90%;
+  max-width: 90%;
 }
 
 /* style for footer */
+.footer-container{
+  font-family: 'Nosifer', cursive;
+  font-size: 14px;
+}
 .footer-images {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .footer-images a {
@@ -176,16 +206,21 @@ h2 {
 }
 
 .footer-images img {
-  width: 50px;
   height: 50px;
   border-radius: 50%;
+  width: 50px;
 }
 
+<<<<<<< HEAD
 
 .brainContainer, .ghostbusterContainer, .darknessIntoLightContainer{
+=======
+/* styling for help page */
+.brainContainer, .ghostbusterContainer{
+  align-items: center;
+>>>>>>> 2e0b1e4c5d8753a859257b9c359719561616e9ee
   display: flex;
   justify-content: center;
-  align-items: center;
   min-height: 100vh;
 }
 .brainWrapper, .ghostbusterWrapper, .darknessIntoLightWrapper{
@@ -203,9 +238,24 @@ h2 {
 }
 
 .enterButtonHelp button{
-  visibility: hidden;
   background-color: #000;
   color: black;
   overflow: hidden;
+  visibility: hidden;
 }
 
+<<<<<<< HEAD
+=======
+/*Styling for horror storries page*/
+.btn-primary {
+  background-color: #EE5921;
+  border-color: #EE5921;
+  color: #fff;
+  font-family: 'Nosifer', cursive;
+}
+
+/*Styling for helpppp page*/
+.reasons {
+  list-style: none;
+}
+>>>>>>> 2e0b1e4c5d8753a859257b9c359719561616e9ee
