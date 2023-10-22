@@ -5,9 +5,6 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url(/assets/images/halloween-images/aesthetic-creepy-halloween-background-1920-x-1080-t4ujca96rjeyfmpn.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
     position: relative;
 }
 
@@ -37,6 +34,7 @@ li:not(.reasons li, .nav-item, .navbar-nav, .bg-light):hover~li{
     filter: blur(20px);
     opacity: 0;
 }
+
 
 .imageContainer{
     margin-top: 70vh;
@@ -86,9 +84,9 @@ li:not(.reasons li, .nav-item, .navbar-nav, .bg-light):hover~li{
     background-color: #000;
     color: black;
     overflow: hidden;
-  } 
+  }
 
-/* style for footer */
+
 .footer-images {
     display: flex;
     justify-content: center;
