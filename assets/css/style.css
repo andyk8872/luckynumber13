@@ -250,3 +250,25 @@ h2 {
 .reasons {
   list-style: none;
 }
+
+/*Styling for tricks page*/
+
+.tricks-img {
+  max-height: 400px;
+  max-width: 500px;
+}
+
+.tricks-list-container {
+  margin-left: 150px;
+}
+
+.tricks-list-title {
+  color: #EE5921;
+  text-align: left;
+}
+
+.tricks-list-text {
+  text-align: left;
+  max-width: 80%;
+  text-wrap: wrap;
+}
