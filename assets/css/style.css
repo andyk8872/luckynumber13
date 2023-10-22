@@ -270,6 +270,26 @@ h2 {
   list-style: none;
 }
 
+.main-links a {
+  
+  align-items: center;
+  color: #EE5921;
+  text-decoration: none;
+  font-size: larger;
+  font-weight: 600;
+  ;
+}
+
+.main-links i.fa-solid {
+  color: #EE5921;
+  
+}
+
+.main-links a:hover {
+  text-decoration: underline;
+}
+
+
 /*Styling for tricks page*/
 
 .tricks-img {
