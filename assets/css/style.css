@@ -265,6 +265,18 @@ h2 {
   font-family: 'Nosifer', cursive;
 }
 
+
+.story-img {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+/*Styling for helpppp page*/
+.reasons {
+  list-style: none;
+}
+
+
 /*Styling for tricks page*/
 
 .tricks-img {
