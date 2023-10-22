@@ -13,7 +13,7 @@ The website was deployed to GitHub pages:
 - 🎃 Under the **Source** section, select the **Main** branch from the drop-down menu and click **Save**.
 - 🎃 A message will appear to confirm a successful deployment to GitHub pages and provide the live link.
 
-Live link to the website - [The Scaaaaary Life of Coding](https://andyk8872.github.io/luckynumber13/)
+Live link to the website - [The Scaaaaary Life of Coders](https://andyk8872.github.io/luckynumber13/)
 
 ### Forking the GitHub Repository
 - 🎃 Go to the GitHub repository.
@@ -71,7 +71,7 @@ In the tech section, we provide information about the technology stack, dependen
 - 🎃Helpppp page image taken from [Vecteezy](https://www.vecteezy.com), owner [Ahasanara Akter]("https://www.vecteezy.com/photo/22909254-human-brain-medical-and-health-care-conceptual-illustration-3d-render-generate-ai")
 - 🎃 Tricks Page pumpkin image taken from [Unsplash](https://unsplash.com), owner [Lucia Foster](https://unsplash.com/photos/jack-o-lantern-with-light-qPtB_GTcyO8)
 - 🎃 Information for tricks page was gathered from [Medium.com](https://medium.com/@joshuatyler/the-magic-of-coding-30e58ce31032) and [Codeminer blog](https://blog.codeminer42.com/unravel-the-magic-of-programming/)
-- 🎃
+- 🎃 Favicon created using [Faviconer](http://www.faviconer.com/)
 - 🎃 Credits and Thank You to all our team ***Creepy Coders*** for input during the project and great communication via Slack channel chat and calls.
   - 🎃 [Andrew Kennedy](https://github.com/ocassidydev)
   - 🎃 [John Walshe](https://github.com/JWalshe86)
