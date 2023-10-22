@@ -36,7 +36,7 @@ function displayReviews() {
         card.classList.add("col-md-6", "mb-3");
         card.innerHTML = `
             <div class="card border border-4 border-warning">      
-            <img src="/assets/images/${randomImageNumber}.jpg" class="card-img-top" alt="User Image">
+            <img src="../assets/images/${randomImageNumber}.jpg" class="card-img-top" alt="User Image">
                 <div class="card-body">
                     <h5 class="card-title">${review.name}</h5>
                     <p class="card-text">${review.title}</p>
