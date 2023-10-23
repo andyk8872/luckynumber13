@@ -53,6 +53,7 @@ h1:hover::after {
 .eye {
   background-color: #212121;
   border-radius: 50%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   height: 120px;
   margin: 20px;
   position: relative;
