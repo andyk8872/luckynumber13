@@ -286,11 +286,12 @@ h2 {
 
 .tricks-list-container {
   margin-left: 150px;
+  list-style: none;
 }
 
 .tricks-list-title {
   color: #EE5921;
-  list-style: none;
+  list-style-type: none;
   text-align: left;
 }
 
