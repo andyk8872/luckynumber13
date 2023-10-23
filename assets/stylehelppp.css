@@ -8,22 +8,15 @@
 }
 
 
-#navbarNav{
-    overflow: hidden;
-    background: #fff;
-    margin-top: -1vh;
+ul img:not(.ghostbusterWrapper img, .footer-images img, .darknessIntoLightWrapper img, .brainWrapper img){
+  height: 10vh;
+  padding: 1vw;
+  filter: brightness(30%);
 }
 
-.navbar-nav{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.nav-item{
-    color: #000;
-    text-align: center;
-    list-style-type: none;
-}
+.reasons{
+  list-style-type: none;
+} 
 
 
 .brainContainer, .ghostbusterContainer, .darknessIntoLightContainer{
@@ -56,41 +49,56 @@
 
 
 .footer-images {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .footer-images a {
-    display: inline-block;
-    margin: 10px;
-  }
-  
-  .footer-images img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-  }
-
-  .footer-container{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-.flex-wrapper {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    justify-content: space-between;
-}
-h2{
-    text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
-.brainWrapper img, .ghostbusterWrapper img, .darknessIntoLightWrapper img{
-    margin-right: 2vw;
+.footer-images a {
+  display: inline-block;
+  margin: 10px;
+}
+
+.footer-images img {
+  height: 50px;
+  border-radius: 50%;
+  width: 50px;
+}
+
+
+/* styling for help page */
+.brainContainer, .ghostbusterContainer{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2vh;
+  min-height: 100vh;
+}
+
+.brainWrapper, .ghostbusterWrapper{
+  margin: 2vh auto;
+  width: 70%;
+}
+
+.brainWrapper img {
+  padding-bottom: 20px;
+  margin-top: 30vh;
+}
+
+.text-box{
+  color: white;
+}
+
+.ghostbusterWrapper img{
+  padding-bottom: 10px;
+  width: 70%;
+}
+
+.enterButtonHelp button{
+  background-color: #000;
+  color: black;
+  overflow: hidden;
+  visibility: hidden;
 }
 
 ul img{
@@ -490,3 +498,7 @@ h2 {
     margin-bottom: 0;
   }
 }
+
+
+
+
