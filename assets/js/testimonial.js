@@ -38,9 +38,9 @@ function displayReviews() {
             <div class="card border border-4 border-warning">      
             <img src="./assets/images/${randomImageNumber}.jpg" class="card-img-top" alt="User Image">
                 <div class="card-body">
-                    <h5 class="card-title">${review.name}</h5>
-                    <p class="card-text">${review.title}</p>
-                    <p class="card-text">${review.review}</p>                  
+                    <h5 class="card-title">${review.title}</h5>
+                    <p class="card-text">${review.review}</p>
+                    <p class="card-footer">${review.name}</p>                  
                 </div>
             </div>
         `;
