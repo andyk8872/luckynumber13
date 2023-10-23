@@ -73,6 +73,8 @@ In the tech section, we provide information about the technology stack, dependen
 - 🎃 Tricks Page pumpkin image taken from [Unsplash](https://unsplash.com), owner [Lucia Foster](https://unsplash.com/photos/jack-o-lantern-with-light-qPtB_GTcyO8)
 - 🎃 Information for tricks page was gathered from [Medium.com](https://medium.com/@joshuatyler/the-magic-of-coding-30e58ce31032) and [Codeminer blog](https://blog.codeminer42.com/unravel-the-magic-of-programming/)
 - 🎃 Favicon created using [Faviconer](http://www.faviconer.com/)
+- 🎃 Memes found on [Software Junkies](https://www.instagram.com/software_junkies/)
+- 🎃 AI Chatbot created using [Chatsimple](http://app.chatsimple.ai)
 - 🎃 Credits and Thank You to all our team ***Creepy Coders*** for input during the project and great communication via Slack channel chat and calls.
   - 🎃 [Andrew Kennedy](https://github.com/ocassidydev)
   - 🎃 [John Walshe](https://github.com/JWalshe86)
