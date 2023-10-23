@@ -20,7 +20,7 @@ header {
 h1 {
   color: #EE5921;
   font-family: 'Nosifer', cursive;
-  font-size: 4rem; 
+  font-size: 3rem; 
 }
 h1 {
   position: relative;
@@ -53,6 +53,7 @@ h1:hover::after {
 .eye {
   background-color: #212121;
   border-radius: 50%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   height: 120px;
   margin: 20px;
   position: relative;
@@ -330,29 +331,6 @@ h2 {
 
 /*Media for screens under 390px and over 370px*/
 @media (max-width: 390px) and (min-width: 370px){
-  h1 {
-    font-size: 2.2rem;
-    margin-top: 10px;
-  }
-  h2 {
-    font-size: 1.4rem;
-  }
-  .eye {
-    height: 80px;
-    margin: 5px;
-    width: 80px;
-  }
-  .ball {
-    height: 25px;
-    width: 25px;
-  }
-  .enterButtonWrapper {
-    max-width: 70vw;
-    margin-left: 50px;
-  }
-  img {
-    max-width: 90vw;
-  }
   .mr-5, .mx-5 {
     margin-left: 2rem;
   }
@@ -371,6 +349,11 @@ h2 {
     margin-left: -1.5em;
     max-width: 80vw;
   }
+
+  .darknessIntoLightContainer img{
+    width: 80vw;
+  }
+
   .reasons {
     margin-left: -3.5em;
   }
@@ -384,5 +367,94 @@ h2 {
   }
   .brainContainer {
     margin-bottom: 0;
+  }
+}
+
+/*Media for screens under 410px and over 320px*/
+@media (max-width: 410px) and (min-width: 320px){
+  h1 {
+    font-size: 2.2rem;
+    margin-top: 10px;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  .eye {
+    height: 70px;
+    margin: 5px;
+    width: 70px;
+  }
+  .ball {
+    height: 25px;
+    width: 25px;
+  }
+  .enterButtonWrapper {
+    max-width: 70vw;
+    margin-left: 50px;
+  }
+  img {
+    max-width: 90vw;
+  }
+  .footer-images img {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+/*Media for screens under 470px and over 411px*/
+@media (max-width: 470px) and (min-width: 411px){
+  h1 {
+    font-size: 2.5rem;
+    margin-top: 10px;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  .eye {
+    height: 90px;
+    margin: 5px;
+    width: 90px;
+  }
+  .ball {
+    height: 40px;
+    width: 40px;
+  }
+  .enterButtonWrapper {
+    max-width: 70vw;
+    margin-left: 70px;
+  }
+  img {
+    max-width: 90vw;
+  }
+  .footer-images img {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+/*Media for screens under 650px and over 471px*/
+@media (max-width: 650px) and (min-width: 471px){
+  h1 {
+    font-size: 3.1rem;
+    margin-top: 10px;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  .eye {
+    height: 110px;
+    margin: 5px;
+    width: 110px;
+  }
+  .enterButtonWrapper {
+    max-width: 70vw;
+    margin-left: 90px;
+  }
+  img {
+    max-width: 80vw;
+  }
+  .footer-images img {
+    height: 50px;
+    width: 50px;
   }
 }
