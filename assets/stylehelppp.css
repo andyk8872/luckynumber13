@@ -102,8 +102,9 @@ ul img{
 
 body {
   background: #000;
-  color: white;
+  color: rgb(242, 238, 238);
   text-align: center;
+
   height: 100vh;
   display: flex;
   position: relative;
