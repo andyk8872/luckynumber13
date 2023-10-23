@@ -10,81 +10,82 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
-
+    <link rel="shortcut icon" href="halloween.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Testimonials Section</title>
 </head>
 
 <body>
-    <div class="flex-wrapper">
-      <header>
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
-          <div class="eyes">
-            <div class="eye">
-              <div class="ball"></div>
-            </div>
-            <div class="eye">
-              <div class="ball"></div>
-            </div>
-          </div>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="tricks.html">Tricks</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="memes.html">Treats</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="testimonial.html">Horror Stories</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="helpppp.html">Helppp</a>
-              </li>
-            </ul>
-          </div>
-  
-        </nav>
-      </header>
-  
-      <div class="container-fluid mt-5">
-        <h1 class="text-center mb-5">Coding Horror Stories</h1>
-        <div class="row">
-            <div class="col-md-6 px-5">
-                <h3>Share your coding nightmares:</h3>
-                <form id="reviewForm">
-                    <div class="mb-3">
-                        <label for="name">Name:</label>
-                        <input type="text" class="form-control" id="name" required>
+    <div class="container-fluid m-0 p-0">
+        <header class="container-fluid p-0 m-0">
+            <nav class="navbar navbar-expand-md navbar-light bg-light">
+                <div class="eyes">
+                    <div class="eye">
+                        <div class="ball"></div>
                     </div>
-                    <div class="mb-3">
-                        <label for="title">Horror Story Title:</label>
-                        <input type="text" class="form-control" id="title" required>
+                    <div class="eye">
+                        <div class="ball"></div>
                     </div>
-                    <div class="mb-3">
-                        <label for="review">Scary Coding Story:</label>
-                        <textarea class="form-control" id="review" rows="6" required></textarea>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="tricks.html">Tricks</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="memes.html">Treats</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="testimonial.html">Horror Stories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="helpppp.html">Helppp</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+        </header>
+
+        <div class="container mt-5">
+            <h1 class="text-center mb-5">Coding Horror Stories</h1>
+            <div class="row">
+                <div class="col-md-6 px-5">
+                    <h3>Share your coding nightmares:</h3>
+                    <form id="reviewForm">
+                        <div class="mb-3">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <!-- NEW -->
+                        <div class="mb-3">
+                            <label for="name">Title:</label>
+                            <input type="text" class="form-control" id="title" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="review">Scary Coding Story:</label>
+                            <textarea class="form-control" id="review" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <div class="mx-2">
+                        <img src="assets/images/skeleton-coder.png" class="tricks-img" alt="desperate hand">
                     </div>
-                    <button type="submit" class="btn btn-primary mb-3">Submit</button>
-                </form>
-            </div>
-            <div class="col-md-6 px-5">
-                <div>
-                    <img src="assets/images/skeleton-coder.png" class="tricks-img" alt="desperate hand">
                 </div>
             </div>
-        </div>
 
-        <div class="container-fluid mt-5">
+            <div class="container-fluid mt-5">
                 <h3 class="mb-3">Recent Spine-Chilling Tales:</h3>
-                
+
                 <div class="row">
                     <div class="col-md-6 mb-3">
                         <div class="card border border-4 border-warning">
@@ -115,53 +116,55 @@
                 <div id="reviewList" class="row">
                     <div class="col-md-6 mb-3">
                         <!-- Reviews will be displayed here -->
+                        <p>testtttt</p>
                     </div>
+
                 </div>
+            </div>
         </div>
-    </div>
-  
-  
-      <footer class="container-fluid footer-container">
-        <div>Project by Team 13 - Hackathon Oct '23</div>
-        <div class="footer-images">
-          <a href="https://www.linkedin.com/in/kimhanlon291354/" target="_blank"><img src="assets/images/kim.jpg"
-              alt="LinkedIn Page 1"></a>
-          <a href="https://www.linkedin.com/in/andrew-kennedy-developer/" target="_blank"><img
-              src="assets/images/andrew.jpeg" alt="LinkedIn Page 2"></a>
-          <a href="https://www.linkedin.com/in/kellyhutchison/" target="_blank"><img src="assets/images/kelly.jpeg"
-              alt="LinkedIn Page 3"></a>
-          <a href="https://www.linkedin.com/in/viola-bergere-5a668699/" target="_blank"><img
-              src="assets/images/viola.jpeg" alt="LinkedIn Page 4"></a>
-          <a href="https://www.linkedin.com/in/john-walshe-4bb7a3155/" target="_blank"><img src="assets/images/john.png"
-              alt="LinkedIn Page 5"></a>
-        </div>
-      </footer>
-  
+
+
+        <footer class="container-fluid footer-container">
+            <div>Project by Team 13 - Hackathon Oct '23</div>
+            <div class="footer-images">
+                <a href="https://www.linkedin.com/in/kimhanlon291354/" target="_blank"><img src="assets/images/kim.jpg"
+                        alt="LinkedIn Page 1"></a>
+                <a href="https://www.linkedin.com/in/andrew-kennedy-developer/" target="_blank"><img
+                        src="assets/images/andrew.jpeg" alt="LinkedIn Page 2"></a>
+                <a href="https://www.linkedin.com/in/kellyhutchison/" target="_blank"><img
+                        src="assets/images/kelly.jpeg" alt="LinkedIn Page 3"></a>
+                <a href="https://www.linkedin.com/in/viola-bergere-5a668699/" target="_blank"><img
+                        src="assets/images/viola.jpeg" alt="LinkedIn Page 4"></a>
+                <a href="https://www.linkedin.com/in/john-walshe-4bb7a3155/" target="_blank"><img
+                        src="assets/images/john.png" alt="LinkedIn Page 5"></a>
+            </div>
+        </footer>
+
     </div>
     <chat-bot platform_id="2d8244d7-518b-4bed-a262-a42ceb79f26b" user_id="3a81d767-77c3-4430-8e5b-05a97f5918f3"
-      chatbot_id="792598a0-ec7b-46c1-8ceb-4f601894a52b"><a
-        href="https://www.chatsimple.ai/?utm_source=widget&utm_medium=referral">[chatbot]</a></chat-bot>
+        chatbot_id="792598a0-ec7b-46c1-8ceb-4f601894a52b"><a
+            href="https://www.chatsimple.ai/?utm_source=widget&utm_medium=referral">[chatbot]</a></chat-bot>
     <script src="https://chatsimple-widget.s3.us-east-2.amazonaws.com/chat-bot-loader.js" defer></script>
-  
-    </div>
-  
+
+
     <!-- audio html -->
-    <audio class="scaryEnterSound">
-      <source src="./audio/Enter If You Dare.mp3" type="audio/mpeg">
-    </audio>
+    <!-- <audio class="scaryEnterSound">
+        <source src="./audio/Enter If You Dare.mp3" type="audio/mpeg">
+    </audio> -->
     <!-- audio html -->
-    <audio class="scaryEnterSound" src="./audio/Enter If You Dare.mp3"></audio>
+    <!-- <audio class="scaryEnterSound" src="./audio/Enter If You Dare.mp3"></audio>
     <script src="script.js"></script>
-    <script src="script.js"></script>
-  
+    <script src="script.js"></script> -->
+
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"></script>
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-      crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/284fde1047.js" crossorigin="anonymous"></script>
-  
-  </body>
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/testimonial.js"></script>
+    <script src="script.js"></script>
+
+</body>
 
 </html>

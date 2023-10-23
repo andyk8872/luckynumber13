@@ -67,11 +67,14 @@ In the tech section, we provide information about the technology stack, dependen
 ## Credits
 
 - 🎃Home Page image taken from [Vecteezy](https://www.vecteezy.com), owner [Nongnuch Leelaphasuk]("https://www.vecteezy.com/photo/10377366-abstract-ghost-devil-in-smoke-black-and-white-halloween-and-creepy-concept-digital-art")
+- 🎃Helpppp Page image taken from [Vecteezy](https://www.vecteezy.com), owner [style graphic]("https://www.vecteezy.com/photo/31283002-human-in-spooky-ghosts-costume-flying-inside-the-old-house-at-night-spooky-halloween-background-with-ghost-ghost-on-halloween-celebration-concept-by-ai-generated")
 - 🎃Fonts used are taken from [Google fonts](https://fonts.google.com/)
 - 🎃Helpppp page image taken from [Vecteezy](https://www.vecteezy.com), owner [Ahasanara Akter]("https://www.vecteezy.com/photo/22909254-human-brain-medical-and-health-care-conceptual-illustration-3d-render-generate-ai")
 - 🎃 Tricks Page pumpkin image taken from [Unsplash](https://unsplash.com), owner [Lucia Foster](https://unsplash.com/photos/jack-o-lantern-with-light-qPtB_GTcyO8)
 - 🎃 Information for tricks page was gathered from [Medium.com](https://medium.com/@joshuatyler/the-magic-of-coding-30e58ce31032) and [Codeminer blog](https://blog.codeminer42.com/unravel-the-magic-of-programming/)
 - 🎃 Favicon created using [Faviconer](http://www.faviconer.com/)
+- 🎃 Memes found on [Software Junkies](https://www.instagram.com/software_junkies/)
+- 🎃 AI Chatbot created using [Chatsimple](http://app.chatsimple.ai)
 - 🎃 Credits and Thank You to all our team ***Creepy Coders*** for input during the project and great communication via Slack channel chat and calls.
   - 🎃 [Andrew Kennedy](https://github.com/ocassidydev)
   - 🎃 [John Walshe](https://github.com/JWalshe86)
