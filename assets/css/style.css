@@ -260,6 +260,16 @@ h2 {
   font-family: 'Nosifer', cursive;
 }
 
+.btn-primary:hover {
+  background-color: #BF360C;
+  border-color: #EE5921;
+}
+
+.btn-primary:active {
+  background-color: #EE5921;
+  border-color: #EE5921;
+}
+
 .story-img {
   max-width: 50px;
   max-height: 50px;
