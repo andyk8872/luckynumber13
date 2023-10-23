@@ -308,8 +308,8 @@ h2 {
 }
 
 .tricks-list-container {
-  margin-left: 150px;
   list-style: none;
+  text-align: center;
 }
 
 .tricks-list-title {
