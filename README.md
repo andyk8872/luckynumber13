@@ -62,7 +62,16 @@ For this project we made wireframes to help with planning and design. While some
 - 🎃 [Contact Us page](assets/images/contact_us.png)
 
 ## Tech
-In the tech section, we provide information about the technology stack, dependencies, and any technical details related to the project.
+The tech used in this project is as follow:
+* [Bootstrap](https://react-bootstrap.github.io/)
+* [Font Awesome](https://fontawesome.com/)
+* [Google Fonts](https://fonts.google.com/)
+* HTML 5 - Content and Structure
+* CSS 3 - Styling
+* Javascript - Interactive features
+* [Balsamiq](https://balsamiq.com/) - Wireframes
+* Gitpod - website IDE
+* Github - website hosting
 
 ## Credits
 
