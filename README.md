@@ -2,7 +2,8 @@
 <h1 align="center"><strong>The Scaaaaary Life of Coders</strong></h1>
 
 <p align = "center">
-### Chatbot
+
+![Chatbot capture](assets/images/vecteezy_human-in-spooky-ghosts-costume-flying-inside-the-old-house_31283002_84.jpg)
 
 ## **Deployment**
 
