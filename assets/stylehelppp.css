@@ -1,16 +1,12 @@
-body{
+/* body{
     margin: 0;
     padding: 0;
     font-family: 'Nosifer', cursive;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    position: relative;
+    
 }
 
-.imageContainer{
-    margin-top: 70vh;
-}
 
 #navbarNav{
     overflow: hidden;
@@ -37,7 +33,7 @@ body{
     min-height: 100vh;
     background-color: black;
   }
-   .brainWrapper, .ghostbusterWrapper, .darknessIntoLightWrapper{
+.brainWrapper, .ghostbusterWrapper, .darknessIntoLightWrapper{
     margin: 5vh auto;
     width: 70%;
   }
@@ -101,4 +97,395 @@ ul img{
     height: 10vh;
     padding: 1vw;
     filter: brightness(30%);
+} */
+
+
+body {
+  background: #000;
+  color: white;
+  text-align: center;
+  display: flex;
+  height: 100vh;
+  position: relative;
+  background-image: url(/assets/images/halloween-images/aesthetic-creepy-halloween-background-1920-x-1080-t4ujca96rjeyfmpn.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.darknessInto
+
+.flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+header {
+  margin: 20px 0;
+}
+
+h1 {
+  color: #EE5921;
+  font-family: 'Nosifer', cursive;
+  font-size: 4rem; 
+}
+h1 {
+  position: relative;
+}
+
+h1::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #ff0000; /* Change the color as desired */
+  box-sizing: border-box;
+  transform: scale(0);
+  transition: transform 0.2s;
+}
+
+h1:hover::after {
+  transform: scale(1);
+}
+
+
+.eyes {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.eye {
+  background-color: #212121;
+  border-radius: 50%;
+  height: 120px;
+  margin: 20px;
+  position: relative;
+  width: 120px;
+}
+
+.ball {
+  background-color: white;
+  border-radius: 50%;
+  height: 50px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+}
+
+h2 {
+  font-family: 'Nosifer', cursive;
+  margin-bottom: 20px;
+  size: 20px;
+}
+
+.enterButtonWrapper {
+  margin-bottom: 10px;
+}
+
+.enterButton {
+  background-color: #EE5921;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-family: 'Nosifer', cursive;
+  font-size: 24px;
+  margin: 20px 0;
+  padding: 12px 24px;
+  transition: background-color 0.3s;
+}
+
+.enterButton:hover {
+  background-color: #BF360C;
+}
+
+.meme {
+  background-color: #EE5921;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 12px 24px;
+  transition: background-color 0.3s;
+}
+
+.meme:hover {
+  background-color: #BF360C;
+}
+
+.tricks {
+  background-color: #EE5921;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 12px 24px;
+  transition: background-color 0.3s;
+}
+
+.tricks:hover {
+  background-color: #BF360C;
+}
+
+.nav-item a {
+  color: #EE5921 !important;
+  font-size: 1.2rem;
+  font-family: 'Nosifer', cursive;
+}
+.nav-link:hover {
+  font-size: 23px;
+ 
+}
+.active>.nav-link {
+  color: #BF360C !important;
+  font-size: 1.2rem;
+  font-family: 'Nosifer', cursive;
+}
+
+#image-gallery .modal-footer{
+  display: block;
+}
+
+/* style for meme page */
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.gallery-item {
+  border-radius: 10px;
+  flex: 0 0 calc(25% - 20px); /* Adjust the value to make the items smaller */
+  overflow: hidden;
+}
+
+.gallery-item img {
+  cursor: pointer;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+.bigger-image {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+}
+
+.bigger-image img {
+  max-height: 90%;
+  max-width: 90%;
+}
+
+/* style for footer */
+.footer-container{
+  font-family: 'Nosifer', cursive;
+  font-size: 14px;
+}
+.footer-images {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-images a {
+  display: inline-block;
+  margin: 10px;
+}
+
+.footer-images img {
+  height: 50px;
+  border-radius: 50%;
+  width: 50px;
+}
+
+
+/* styling for help page */
+.brainContainer, .ghostbusterContainer{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10em;
+}
+
+.brainContainer{
+  margin-top: 100vh;
+}
+
+.brainWrapper, .ghostbusterWrapper{
+  width: 70%;
+}
+
+.brainWrapper img {
+  padding-bottom: 20px;
+}
+
+.text-box{
+  color: white;
+}
+
+.ghostbusterWrapper img{
+  height: 50vh;
+  padding-bottom: 10px;
+  width: 70%;
+}
+
+.enterButtonHelp button{
+  background-color: #000;
+  color: black;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.reasons {
+  list-style: none;
+}
+
+.helpLinks {
+  list-style: none;
+  margin-left: 20em;
+  text-align: left;
+}
+
+/*Styling for horror storries page*/
+.btn-primary {
+  background-color: #EE5921;
+  border-color: #EE5921;
+  color: #fff;
+  font-family: 'Nosifer', cursive;
+}
+
+.story-img {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+/*Styling for helpppp page*/
+.reasons {
+  list-style: none;
+}
+
+.main-links a {
+  
+  align-items: center;
+  color: #EE5921;
+  text-decoration: none;
+  font-size: larger;
+  font-weight: 600;
+  ;
+}
+
+.main-links i.fa-solid {
+  color: #EE5921;
+  
+}
+
+.main-links a:hover {
+  text-decoration: underline;
+}
+
+
+
+/*Styling for tricks page*/
+
+.tricks-img {
+  max-height: 400px;
+  max-width: 75%;
+}
+
+.tricks-list-container {
+  margin-left: 150px;
+}
+
+.tricks-list-title {
+  color: #EE5921;
+  list-style: none;
+  text-align: left;
+}
+
+.tricks-list-text {
+  text-align: left;
+  max-width: 80%;
+  text-wrap: wrap;
+}
+
+.tricks-list-container li {
+  list-style: none;
+}
+
+/*Media for screens under 390px and over 370px*/
+@media (max-width: 390px) and (min-width: 370px){
+  h1 {
+    font-size: 2.2rem;
+    margin-top: 10px;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  .eye {
+    height: 80px;
+    margin: 5px;
+    width: 80px;
+  }
+  .ball {
+    height: 25px;
+    width: 25px;
+  }
+  .enterButtonWrapper {
+    max-width: 70vw;
+    margin-left: 50px;
+  }
+  img {
+    max-width: 90vw;
+  }
+  .mr-5, .mx-5 {
+    margin-left: 2rem;
+  }
+  .tricks-list-container {
+    margin-left: 0;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  .tricks-img {
+    max-height: 300px;
+    max-width: 90vw;
+    padding: 20px;
+  }
+  .brainWrapper img {
+    margin-left: -1.5em;
+    max-width: 80vw;
+  }
+  .reasons {
+    margin-left: -3.5em;
+  }
+  .ghostbusterWrapper img {
+    height: auto;
+    margin-left: -2.5em;
+    width: 90vw;
+  }
+  .helpLinks {
+    margin-left: 0;
+  }
+  .brainContainer {
+    margin-bottom: 0;
+  }
 }
