@@ -182,3 +182,16 @@ function initializeGallery() {
     });
 
 }
+
+// Function to play sound and navigate
+function playSoundAndNavigate() {
+  var audio = document.querySelector(".scaryEnterSound");
+  audio.play();
+  window.location.href = "testimonial.html";
+}
+
+// Attach the click event to the button when the page is loaded
+window.addEventListener('load', function () {
+  var enterButton = document.getElementById("enterButton");
+  enterButton.addEventListener("click", playSoundAndNavigate);
+});
