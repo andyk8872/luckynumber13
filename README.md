@@ -2,7 +2,7 @@
 <h1 align="center"><strong>The Scaaaaary Life of Coders</strong></h1>
 
 <p align = "center">
-<img src = assets/images/640-abstract-ghost-devil-in-smoke-black-and-white-halloween-and-creepy-concept-digital-art.jpg></p>
+### Chatbot
 
 ## **Deployment**
 
@@ -73,6 +73,11 @@ The tech used in this project is as follow:
 * Gitpod - website IDE
 * Github - website hosting
 
+### Chatbot
+- Chatbot is linked up to [Chatsimple](http://chatsimple.ai)and stores all conversation to connect users with a contact form that directs to developers email:
+
+![Chatbot capture](chatbotcapture.png)
+![Chatbot capture](chatbot.png)
 ## Credits
 
 - 🎃Home Page image taken from [Vecteezy](https://www.vecteezy.com), owner [Nongnuch Leelaphasuk]("https://www.vecteezy.com/photo/10377366-abstract-ghost-devil-in-smoke-black-and-white-halloween-and-creepy-concept-digital-art")
